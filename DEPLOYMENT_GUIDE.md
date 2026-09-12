@@ -107,6 +107,18 @@ Content-Type: audio/mpeg
 
 ---
 
+## 🔒 Direct Browser Access & Hotlink Protection
+
+To prevent unauthorized scraping, mass-downloading, or visitors typing `.mp3` URLs directly into web browser address bars, both `.htaccess` and `nginx.conf` include protection rules:
+
+- **Direct URL bar access is blocked (HTTP 403 Forbidden)**: Web browsers sending empty or untrusted `Referer` headers will be denied access.
+- **Authorized App & Domain Requests are allowed**:
+  - `https://appassets.androidplatform.net` (Android modern `WebViewAssetLoader` virtual domain)
+  - `https://ithageneia.nimarahbar.com` & `https://nimarahbar.com`
+  - `capacitor://`, `ionic://`, `http://localhost` schemes
+
+---
+
 ## 📱 How the Android App Connects to Your Host
 
 We have already implemented the automatic streaming resolver in `app.js`:

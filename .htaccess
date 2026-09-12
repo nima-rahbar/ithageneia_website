@@ -1,17 +1,39 @@
 # ==============================================================================
 # Apache Configuration for ithageneia.nimarahbar.com
-# Optimized for One-Page App Delivery & Audio Streaming
+# Optimized for Showcase Landing Page & Protected Audio Streaming
 # ==============================================================================
 
 # 1. CORS Headers (Allows Android App, WebView & External Clients to stream audio)
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
     Header set Access-Control-Allow-Methods "GET, HEAD, OPTIONS"
-    Header set Access-Control-Allow-Headers "Range, Accept-Ranges, Content-Type, Origin"
+    Header set Access-Control-Allow-Headers "Range, Accept-Ranges, Content-Type, Origin, User-Agent, Referer"
     Header set Access-Control-Expose-Headers "Content-Range, Content-Length, Accept-Ranges"
 </IfModule>
 
-# 2. Byte-Range Streaming & Caching for Audio Files (.mp3)
+# 2. Hotlink & Direct Browser Protection for Audio Files (.mp3)
+# Blocks direct URL bar navigation, downloads, and external hotlinking.
+# Only allows requests with an origin/referer from your authorized app environments or domain.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # If the requested URL is inside /audio/ or has an audio extension
+    RewriteCond %{REQUEST_URI} \.(mp3|ogg|m4a|wav)$ [NC]
+
+    # Whitelist 1: Requests originating from Android WebViewAssetLoader virtual domain
+    RewriteCond %{HTTP_REFERER} ^https?://appassets\.androidplatform\.net [NC,OR]
+
+    # Whitelist 2: Requests originating from your own website domain (ithageneia.nimarahbar.com / nimarahbar.com)
+    RewriteCond %{HTTP_REFERER} ^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com [NC,OR]
+
+    # Whitelist 3: Requests with Android localhost / Capacitor / Cordova / Native schemes
+    RewriteCond %{HTTP_REFERER} ^(capacitor|ionic|http://localhost|https://localhost) [NC]
+
+    # If none of the whitelisted conditions match (e.g. empty Referer from browser address bar or external link), deny access with 403 Forbidden
+    RewriteRule ^audio/ - [F,L]
+</IfModule>
+
+# 3. Byte-Range Streaming & Caching for Audio Files (.mp3)
 # Enables timeline scrubbing / seeking on mobile devices and WebViews
 <IfModule mod_headers.c>
     <FilesMatch "\.(mp3|ogg|m4a|wav)$">
@@ -20,7 +42,7 @@
     </FilesMatch>
 </IfModule>
 
-# 3. Browser Caching for Fast Loading
+# 4. Browser Caching for Fast Loading
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 2 days"
@@ -33,10 +55,10 @@
     ExpiresByType audio/mpeg "access plus 1 year"
 </IfModule>
 
-# 4. Gzip Compression for Fast Page Loads
+# 5. Gzip Compression for Fast Page Loads
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
 </IfModule>
 
-# 5. UTF-8 Character Encoding
+# 6. UTF-8 Character Encoding
 AddDefaultCharset UTF-8
