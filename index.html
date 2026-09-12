@@ -53,7 +53,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -94,10 +95,9 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
     <div class="container py-1">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
         <div class="navbar-brand-logo">
-          <img class="img-responsive" src="assets/logo.png" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android"
-            style="width: 70px;">
+          <img class="img-responsive" src="assets/logo.png" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android" width="70" height="70">
         </div>
         <div>
           <span class="fw-bold fs-5 text-navy-custom d-block lh-1">Ιθαγένεια</span>
@@ -661,7 +661,7 @@
               </div>
               <h3 class="h5 fw-bold mb-1">Thema_01 έως Thema_50</h3>
               <p class="text-muted small mb-3">Πλήρης συλλογή ηχητικών εξετάσεων</p>
-              <audio controls class="w-100" style="max-width: 260px;">
+              <audio controls preload="none" class="w-100" style="max-width: 260px;">
                 <source src="audio/Thema_01.mp3" type="audio/mpeg">
                 Ο browser σας δεν υποστηρίζει αναπαραγωγή ήχου.
               </audio>
@@ -735,11 +735,11 @@
             <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
               class="about-logo-wrapper d-inline-flex align-items-center justify-content-center py-3 px-4 rounded-4 shadow-sm text-decoration-none"
               title="Nima Rahbar">
-              <img src="assets/nimarahbar.png" alt="Nima Rahbar" class="about-creator-logo img-fluid">
+              <img src="assets/nimarahbar.png" alt="Nima Rahbar" class="about-creator-logo img-fluid" width="180" height="60">
             </a>
           </div>
-          <h3 class="text-navy-custom fw-bold mb-1 fs-4">Nima Rahbar</h3>
-          <p class="text-muted small mb-3">Senior Web Designer & Developer</p>
+          <div class="h4 text-navy-custom fw-bold mb-1 fs-4">Nima Rahbar</div>
+          <p class="text-muted small mb-3">Senior Web Designer &amp; Developer</p>
           <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
             class="btn-outline-navy btn-sm text-decoration-none py-2 px-3">
             <i class="bi bi-globe2"></i>
