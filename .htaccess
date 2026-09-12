@@ -1,0 +1,42 @@
+# ==============================================================================
+# Apache Configuration for ithageneia.nimarahbar.com
+# Optimized for One-Page App Delivery & Audio Streaming
+# ==============================================================================
+
+# 1. CORS Headers (Allows Android App, WebView & External Clients to stream audio)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, HEAD, OPTIONS"
+    Header set Access-Control-Allow-Headers "Range, Accept-Ranges, Content-Type, Origin"
+    Header set Access-Control-Expose-Headers "Content-Range, Content-Length, Accept-Ranges"
+</IfModule>
+
+# 2. Byte-Range Streaming & Caching for Audio Files (.mp3)
+# Enables timeline scrubbing / seeking on mobile devices and WebViews
+<IfModule mod_headers.c>
+    <FilesMatch "\.(mp3|ogg|m4a|wav)$">
+        Header set Accept-Ranges "bytes"
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>
+
+# 3. Browser Caching for Fast Loading
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 2 days"
+    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/json "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType audio/mpeg "access plus 1 year"
+</IfModule>
+
+# 4. Gzip Compression for Fast Page Loads
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# 5. UTF-8 Character Encoding
+AddDefaultCharset UTF-8
