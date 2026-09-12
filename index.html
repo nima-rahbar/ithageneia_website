@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="el">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android</title>
-  <meta name="description" content="Η επίσημη εφαρμογή Android για τις εξετάσεις Ελληνικής Ιθαγένειας (Π.Ε.Γ.Π.). Πλήρης τράπεζα θεμάτων, ηχητική κατανόηση, προσομοίωση εξετάσεων και εξάσκηση εκτός σύνδεσης.">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description"
+    content="Η επίσημη εφαρμογή Android για τις εξετάσεις Ελληνικής Ιθαγένειας (Π.Ε.Γ.Π.). Πλήρης τράπεζα θεμάτων, ηχητική κατανόηση, προσομοίωση εξετάσεων και εξάσκηση εκτός σύνδεσης.">
   <meta name="theme-color" content="#243673">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android">
-  <meta property="og:description" content="Προετοιμαστείτε για το Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση. 920+ ερωτήσεις, 50 ηχητικά θέματα, 100% δωρεάν.">
+  <meta property="og:description"
+    content="Προετοιμαστείτε για το Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση. 920+ ερωτήσεις, 50 ηχητικά θέματα, 100% δωρεάν.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ithageneia.nimarahbar.com">
 
   <!-- Google Fonts & Bootstrap Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Custom Theme Styles (nimarahbar.com Color Palette) -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
@@ -32,7 +55,8 @@
     <div class="container py-1">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
         <div class="navbar-brand-logo">
-          <i class="bi bi-mortarboard-fill"></i>
+          <img class="img-responsive" src="assets/logo.png" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android"
+            style="width: 70px;">
         </div>
         <div>
           <span class="fw-bold fs-5 text-navy-custom d-block lh-1">Ιθαγένεια</span>
@@ -40,7 +64,8 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Εναλλαγή πλοήγησης">
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Εναλλαγή πλοήγησης">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -85,7 +110,9 @@
           </h1>
 
           <p class="hero-subtitle mb-4">
-            Η ολοκληρωμένη εφαρμογή Android για την απόκτηση του <strong>Πιστοποιητικού Επάρκειας Γνώσεων για Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. Πλήρης κάλυψη 920+ ερωτήσεων, άμεση ηχητική ανάγνωση, πραγματικές προσομοιώσεις εξετάσεων και λειτουργία εκτός σύνδεσης.
+            Η ολοκληρωμένη εφαρμογή Android για την απόκτηση του <strong>Πιστοποιητικού Επάρκειας Γνώσεων για
+              Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. Πλήρης κάλυψη 920+ ερωτήσεων, άμεση ηχητική ανάγνωση, πραγματικές
+            προσομοιώσεις εξετάσεων και λειτουργία εκτός σύνδεσης.
           </p>
 
           <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
@@ -147,7 +174,8 @@
                 <div class="mockup-content">
                   <div class="mockup-card-item">
                     <div class="d-flex justify-content-between align-items-center mb-1">
-                      <span class="badge bg-light text-primary-custom fw-bold" style="font-size: 0.65rem;">ΙΣΤΟΡΙΑ • ΘΕΜΑ 4/25</span>
+                      <span class="badge bg-light text-primary-custom fw-bold" style="font-size: 0.65rem;">ΙΣΤΟΡΙΑ •
+                        ΘΕΜΑ 4/25</span>
                       <small class="text-muted" style="font-size: 0.65rem;">⏱️ 01:45</small>
                     </div>
                     <p class="fw-bold mb-2 text-navy-custom" style="font-size: 0.8rem; line-height: 1.35;">
@@ -166,9 +194,11 @@
 
                   <div class="mockup-card-item" style="border-left: 3px solid var(--nr-primary);">
                     <div class="d-flex align-items-center gap-2 mb-1">
-                      <span class="badge bg-primary text-white fw-bold" style="font-size: 0.65rem;">🎧 ΚΑΤΑΝΟΗΣΗ ΠΡΟΦΟΡΙΚΟΥ ΛΟΓΟΥ</span>
+                      <span class="badge bg-primary text-white fw-bold" style="font-size: 0.65rem;">🎧 ΚΑΤΑΝΟΗΣΗ
+                        ΠΡΟΦΟΡΙΚΟΥ ΛΟΓΟΥ</span>
                     </div>
-                    <p class="small text-muted mb-1" style="font-size: 0.72rem;">Θέμα 12: Συνέντευξη για τον ελληνικό πολιτισμό...</p>
+                    <p class="small text-muted mb-1" style="font-size: 0.72rem;">Θέμα 12: Συνέντευξη για τον ελληνικό
+                      πολιτισμό...</p>
                     <div class="progress" style="height: 5px;">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;"></div>
                     </div>
@@ -203,7 +233,8 @@
         <span class="section-tag">Ολοκληρωμενη Προετοιμασια</span>
         <h2 class="section-title">Όλα όσα χρειάζεστε για να πετύχετε στις εξετάσεις</h2>
         <p class="text-muted mt-2">
-          Η εφαρμογή σχεδιάστηκε από επαγγελματίες εκπαιδευτικούς και μηχανικούς λογισμικού, παρέχοντας όλα τα εργαλεία για εγγυημένη επιτυχία.
+          Η εφαρμογή σχεδιάστηκε από επαγγελματίες εκπαιδευτικούς και μηχανικούς λογισμικού, παρέχοντας όλα τα εργαλεία
+          για εγγυημένη επιτυχία.
         </p>
       </div>
 
@@ -216,7 +247,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">920+ Επίσημες Ερωτήσεις</h4>
             <p class="text-muted small mb-0">
-              Πλήρης κάλυψη όλων των ερωτήσεων της Τράπεζας Θεμάτων του Υπουργείου Εσωτερικών: πολλαπλής επιλογής (MC4, MC3), Σωστό/Λάθος, αντιστοιχίσεις, συμπλήρωση κενών και ερωτήσεις χαρτών.
+              Πλήρης κάλυψη όλων των ερωτήσεων της Τράπεζας Θεμάτων του Υπουργείου Εσωτερικών: πολλαπλής επιλογής (MC4,
+              MC3), Σωστό/Λάθος, αντιστοιχίσεις, συμπλήρωση κενών και ερωτήσεις χαρτών.
             </p>
           </div>
         </div>
@@ -229,7 +261,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h4>
             <p class="text-muted small mb-0">
-              Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα των επίσημων εξετάσεων, με δυνατότητα άμεσης αναπαραγωγής χωρίς να καταλαμβάνεται χώρος στη συσκευή σας.
+              Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα των
+              επίσημων εξετάσεων, με δυνατότητα άμεσης αναπαραγωγής χωρίς να καταλαμβάνεται χώρος στη συσκευή σας.
             </p>
           </div>
         </div>
@@ -242,7 +275,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">Προσομοίωση Πραγματικού Test</h4>
             <p class="text-muted small mb-0">
-              Δοκιμάστε τις δυνάμεις σας υπό πραγματικές συνθήκες εξετάσεων με χρονόμετρο, αυτόματη βαθμολόγηση, ακριβή υπολογισμό ποσοστού επιτυχίας και αναλυτική αναφορά λαθών.
+              Δοκιμάστε τις δυνάμεις σας υπό πραγματικές συνθήκες εξετάσεων με χρονόμετρο, αυτόματη βαθμολόγηση, ακριβή
+              υπολογισμό ποσοστού επιτυχίας και αναλυτική αναφορά λαθών.
             </p>
           </div>
         </div>
@@ -255,7 +289,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">Λειτουργία Εκτός Σύνδεσης (Offline)</h4>
             <p class="text-muted small mb-0">
-              Διαβάστε παντού, ακόμα και χωρίς πρόσβαση στο ίντερνετ. Όλες οι ερωτήσεις, οι απαντήσεις και οι επεξηγήσεις αποθηκεύονται τοπικά στη συσκευή σας.
+              Διαβάστε παντού, ακόμα και χωρίς πρόσβαση στο ίντερνετ. Όλες οι ερωτήσεις, οι απαντήσεις και οι
+              επεξηγήσεις αποθηκεύονται τοπικά στη συσκευή σας.
             </p>
           </div>
         </div>
@@ -268,7 +303,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">Σημειώσεις & Αποθήκευση</h4>
             <p class="text-muted small mb-0">
-              Αποθηκεύστε δύσκολες ερωτήσεις με ένα κλικ για γρήγορη επανάληψη πριν την ημέρα της εξέτασης, διατηρώντας το δικό σας προσωπικό αρχείο μελέτης.
+              Αποθηκεύστε δύσκολες ερωτήσεις με ένα κλικ για γρήγορη επανάληψη πριν την ημέρα της εξέτασης, διατηρώντας
+              το δικό σας προσωπικό αρχείο μελέτης.
             </p>
           </div>
         </div>
@@ -281,7 +317,8 @@
             </div>
             <h4 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά & Ταχύτατη</h4>
             <p class="text-muted small mb-0">
-              Μέγεθος αρχείου μόλις ~3.5 MB! Άμεση εκκίνηση, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
+              Μέγεθος αρχείου μόλις ~3.5 MB! Άμεση εκκίνηση, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε
+              κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
             </p>
           </div>
         </div>
@@ -310,7 +347,8 @@
             </div>
             <h4 class="h5 text-navy-custom">🏛️ Ελληνική Ιστορία</h4>
             <p class="text-muted small mb-0">
-              Αρχαία Ελλάδα, Βυζαντινή περίοδος, Ελληνική Επανάσταση του 1821, Νεότερη & Σύγχρονη Ιστορία, Β' Παγκόσμιος Πόλεμος και Μεταπολίτευση.
+              Αρχαία Ελλάδα, Βυζαντινή περίοδος, Ελληνική Επανάσταση του 1821, Νεότερη & Σύγχρονη Ιστορία, Β' Παγκόσμιος
+              Πόλεμος και Μεταπολίτευση.
             </p>
           </div>
         </div>
@@ -324,7 +362,8 @@
             </div>
             <h4 class="h5 text-navy-custom">🗺️ Γεωγραφία της Ελλάδας</h4>
             <p class="text-muted small mb-0">
-              Γεωγραφικά διαμερίσματα, νομοί και πρωτεύουσες, βουνά, ποτάμια, λίμνες, νησιά και βασικά χαρακτηριστικά της ελληνικής επικράτειας με ερωτήσεις χαρτών.
+              Γεωγραφικά διαμερίσματα, νομοί και πρωτεύουσες, βουνά, ποτάμια, λίμνες, νησιά και βασικά χαρακτηριστικά
+              της ελληνικής επικράτειας με ερωτήσεις χαρτών.
             </p>
           </div>
         </div>
@@ -338,7 +377,8 @@
             </div>
             <h4 class="h5 text-navy-custom">🎭 Ελληνικός Πολιτισμός</h4>
             <p class="text-muted small mb-0">
-              Τέχνες, παραδόσεις, λογοτεχνία, ήθη και έθιμα, μουσική παράδοση, μνημεία παγκόσμιας πολιτιστικής κληρονομιάς UNESCO και σπουδαίοι δημιουργοί.
+              Τέχνες, παραδόσεις, λογοτεχνία, ήθη και έθιμα, μουσική παράδοση, μνημεία παγκόσμιας πολιτιστικής
+              κληρονομιάς UNESCO και σπουδαίοι δημιουργοί.
             </p>
           </div>
         </div>
@@ -352,7 +392,8 @@
             </div>
             <h4 class="h5 text-navy-custom">⚖️ Πολιτικοί Θεσμοί & Σύνταγμα</h4>
             <p class="text-muted small mb-0">
-              Το Πολίτευμα της Ελλάδας, θεμελιώδη ατομικά και κοινωνικά δικαιώματα, Βουλή των Ελλήνων, Κυβέρνηση, Δικαστική εξουσία και Ευρωπαϊκή Ένωση.
+              Το Πολίτευμα της Ελλάδας, θεμελιώδη ατομικά και κοινωνικά δικαιώματα, Βουλή των Ελλήνων, Κυβέρνηση,
+              Δικαστική εξουσία και Ευρωπαϊκή Ένωση.
             </p>
           </div>
         </div>
@@ -366,7 +407,8 @@
             </div>
             <h4 class="h5 text-navy-custom">🎧 Κατανόηση Προφορικού Λόγου</h4>
             <p class="text-muted small mb-0">
-              Ακρόαση διαλόγων, ειδήσεων, ανακοινώσεων και συνεντεύξεων με αντίστοιχες ερωτήσεις κατανόησης και επαλήθευσης απαντήσεων.
+              Ακρόαση διαλόγων, ειδήσεων, ανακοινώσεων και συνεντεύξεων με αντίστοιχες ερωτήσεις κατανόησης και
+              επαλήθευσης απαντήσεων.
             </p>
           </div>
         </div>
@@ -380,7 +422,8 @@
             </div>
             <h4 class="h5 text-navy-custom">✍️ Παραγωγή Γραπτού & Προφορικού</h4>
             <p class="text-muted small mb-0">
-              Καθοδήγηση για την παραγωγή γραπτού κειμένου (επιστολές, εκθέσεις) και προετοιμασία για τη συνέντευξη ενώπιον της επιτροπής πολιτογράφησης.
+              Καθοδήγηση για την παραγωγή γραπτού κειμένου (επιστολές, εκθέσεις) και προετοιμασία για τη συνέντευξη
+              ενώπιον της επιτροπής πολιτογράφησης.
             </p>
           </div>
         </div>
@@ -401,7 +444,10 @@
               Άμεσο Audio Streaming για τις Προφορικές Εξετάσεις
             </h2>
             <p class="text-white-50 mb-4" style="font-size: 1.05rem; line-height: 1.6;">
-              Η πλατφόρμα μας φιλοξενεί και τα 50 ηχητικά αρχεία των εξετάσεων (MP3) σε διακομιστή υψηλής ταχύτητας με υποστήριξη <strong>Byte-Range seeking</strong> και <strong>CORS</strong>. Αυτό επιτρέπει στην εφαρμογή Android να παραμένει ελαφριά (κάτω από 4 MB) ενώ παρέχει αστραπιαία φόρτωση και ακρόαση οποιουδήποτε θέματος.
+              Η πλατφόρμα μας φιλοξενεί και τα 50 ηχητικά αρχεία των εξετάσεων (MP3) σε διακομιστή υψηλής ταχύτητας με
+              υποστήριξη <strong>Byte-Range seeking</strong> και <strong>CORS</strong>. Αυτό επιτρέπει στην εφαρμογή
+              Android να παραμένει ελαφριά (κάτω από 4 MB) ενώ παρέχει αστραπιαία φόρτωση και ακρόαση οποιουδήποτε
+              θέματος.
             </p>
             <div class="d-flex flex-wrap gap-3">
               <div class="d-flex align-items-center gap-2 text-white small">
@@ -451,14 +497,16 @@
       <div class="row justify-content-center g-4">
         <!-- Google Play Option -->
         <div class="col-md-6 col-lg-5">
-          <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank" rel="noopener noreferrer" class="download-channel-card h-100">
+          <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank"
+            rel="noopener noreferrer" class="download-channel-card h-100">
             <div class="download-channel-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
               <i class="bi bi-google-play"></i>
             </div>
             <div class="flex-grow-1">
               <div class="d-flex align-items-center justify-content-between">
                 <h5 class="mb-1 text-navy-custom fw-bold">Google Play Store</h5>
-                <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Επίσημο</span>
+                <span
+                  class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Επίσημο</span>
               </div>
               <p class="text-muted small mb-0">Ασφαλής αυτόματη εγκατάσταση και αυτόματες ενημερώσεις.</p>
             </div>
@@ -477,7 +525,8 @@
             <div class="flex-grow-1">
               <div class="d-flex align-items-center justify-content-between">
                 <h5 class="mb-1 text-navy-custom fw-bold">Άμεση Λήψη APK</h5>
-                <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">~3.5 MB</span>
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill">~3.5
+                  MB</span>
               </div>
               <p class="text-muted small mb-0">Κατεβάστε απευθείας το αρχείο εγκατάστασης για Android 7.0+.</p>
             </div>
@@ -494,7 +543,9 @@
           <div class="alert alert-light border rounded-4 d-flex align-items-start gap-3 p-3 shadow-sm" role="alert">
             <i class="bi bi-info-circle-fill text-primary-custom fs-4 flex-shrink-0 mt-1"></i>
             <div class="small text-muted mb-0">
-              <strong>Οδηγία για άμεση εγκατάσταση (APK):</strong> Εάν πραγματοποιήσετε λήψη του αρχείου APK απευθείας, ενδέχεται να χρειαστεί να επιτρέψετε την <em>"Εγκατάσταση εφαρμογών από άγνωστες πηγές"</em> στις ρυθμίσεις ασφαλείας της συσκευής σας. Η εφαρμογή είναι 100% ασφαλής και δεν απαιτεί ευαίσθητα δικαιώματα.
+              <strong>Οδηγία για άμεση εγκατάσταση (APK):</strong> Εάν πραγματοποιήσετε λήψη του αρχείου APK απευθείας,
+              ενδέχεται να χρειαστεί να επιτρέψετε την <em>"Εγκατάσταση εφαρμογών από άγνωστες πηγές"</em> στις
+              ρυθμίσεις ασφαλείας της συσκευής σας. Η εφαρμογή είναι 100% ασφαλής και δεν απαιτεί ευαίσθητα δικαιώματα.
             </div>
           </div>
         </div>
@@ -508,13 +559,15 @@
       <div class="row align-items-center g-5">
         <div class="col-lg-4 text-center">
           <div class="d-inline-block position-relative mb-3">
-            <div style="width: 140px; height: 140px; border-radius: 50%; background: linear-gradient(135deg, var(--nr-navy) 0%, var(--nr-primary) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3.5rem; margin: 0 auto; box-shadow: 0 12px 28px rgba(0, 155, 223, 0.3);">
+            <div
+              style="width: 140px; height: 140px; border-radius: 50%; background: linear-gradient(135deg, var(--nr-navy) 0%, var(--nr-primary) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3.5rem; margin: 0 auto; box-shadow: 0 12px 28px rgba(0, 155, 223, 0.3);">
               <i class="bi bi-code-slash"></i>
             </div>
           </div>
           <h4 class="text-navy-custom fw-bold mb-1">Nima Rahbar</h4>
           <p class="text-muted small mb-3">Senior Web Designer & Developer</p>
-          <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer" class="btn-outline-navy btn-sm text-decoration-none py-2 px-3">
+          <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
+            class="btn-outline-navy btn-sm text-decoration-none py-2 px-3">
             <i class="bi bi-globe2"></i>
             <span>nimarahbar.com</span>
           </a>
@@ -524,21 +577,28 @@
           <span class="section-tag">Σχετικα με το Εργο</span>
           <h2 class="section-title mb-3">Ανάπτυξη Εφαρμογής & Σκοπός</h2>
           <p class="text-muted" style="line-height: 1.7;">
-            Η εφαρμογή <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> δημιουργήθηκε με στόχο να προσφέρει σε κάθε υποψήφιο ένα σύγχρονο, αξιόπιστο και απολύτως δωρεάν ψηφιακό εργαλείο για την επιτυχή προετοιμασία του στις εξετάσεις πολιτογράφησης στην Ελλάδα.
+            Η εφαρμογή <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> δημιουργήθηκε με στόχο να προσφέρει σε κάθε υποψήφιο ένα
+            σύγχρονο, αξιόπιστο και απολύτως δωρεάν ψηφιακό εργαλείο για την επιτυχή προετοιμασία του στις εξετάσεις
+            πολιτογράφησης στην Ελλάδα.
           </p>
           <p class="text-muted" style="line-height: 1.7;">
-            Συνδυάζοντας την πολυετή εμπειρία στην ανάπτυξη ιστοσελίδων και εφαρμογών, δημιουργήθηκε μια εξαιρετικά γρήγορη και ελαφριά εφαρμογή, διασφαλίζοντας παράλληλα υψηλή ακρίβεια στην τράπεζα θεμάτων και κορυφαία εμπειρία χρήστη.
+            Συνδυάζοντας την πολυετή εμπειρία στην ανάπτυξη ιστοσελίδων και εφαρμογών, δημιουργήθηκε μια εξαιρετικά
+            γρήγορη και ελαφριά εφαρμογή, διασφαλίζοντας παράλληλα υψηλή ακρίβεια στην τράπεζα θεμάτων και κορυφαία
+            εμπειρία χρήστη.
           </p>
 
           <div class="d-flex align-items-center gap-3 mt-4">
             <span class="small fw-bold text-navy-custom">Συνδεθείτε:</span>
-            <a href="https://www.linkedin.com/in/nimarahbar/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/nimarahbar/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" title="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/nima-rahbar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+            <a href="https://github.com/nima-rahbar" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              title="GitHub">
               <i class="bi bi-github"></i>
             </a>
-            <a href="https://nimarahbar.com/contact/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Επικοινωνία">
+            <a href="https://nimarahbar.com/contact/" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              title="Επικοινωνία">
               <i class="bi bi-envelope-fill"></i>
             </a>
           </div>
@@ -553,12 +613,14 @@
       <div class="row align-items-center gy-3">
         <div class="col-md-6 text-center text-md-start">
           <p class="mb-0 small">
-            &copy; 2010 - 2026 <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer" class="author-link">Nima Rahbar</a>. Με την επιφύλαξη παντός δικαιώματος.
+            &copy; 2010 - 2026 <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
+              class="author-link">Nima Rahbar</a>. Με την επιφύλαξη παντός δικαιώματος.
           </p>
         </div>
         <div class="col-md-6 text-center text-md-end">
           <p class="mb-0 small text-muted">
-            Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="#syllabus" class="text-decoration-none text-muted">Ύλη Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Λήψη Android</a>
+            Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="#syllabus" class="text-decoration-none text-muted">Ύλη
+              Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Λήψη Android</a>
           </p>
         </div>
       </div>
@@ -566,6 +628,9 @@
   </footer>
 
   <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
