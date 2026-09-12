@@ -1,0 +1,18 @@
+# Prevent direct access to all audio files in this directory
+<IfModule mod_authz_core.c>
+    SetEnvIfNoCase Referer "^https?://appassets\.androidplatform\.net" allowed_app
+    SetEnvIfNoCase Referer "^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com" allowed_app
+    SetEnvIfNoCase Referer "^(capacitor|ionic|http://localhost|https://localhost)" allowed_app
+    Require env allowed_app
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_REFERER} ^https?://appassets\.androidplatform\.net [NC,OR]
+    RewriteCond %{HTTP_REFERER} ^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com [NC,OR]
+    RewriteCond %{HTTP_REFERER} ^(capacitor|ionic|http://localhost|https://localhost) [NC]
+    RewriteRule .* - [L]
+
+    # Block everything else
+    RewriteRule .* - [F,L]
+</IfModule>

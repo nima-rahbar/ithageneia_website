@@ -13,28 +13,32 @@
 
 # 2. Hotlink & Direct Browser Protection for Audio Files (.mp3)
 # Blocks direct URL bar navigation, downloads, and external hotlinking.
-# Only allows requests with an origin/referer from your authorized app environments or domain.
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteBase /
 
-    # If the requested URL is inside /audio/ or has an audio extension
-    RewriteCond %{REQUEST_URI} \.(mp3|ogg|m4a|wav)$ [NC]
-
-    # Whitelist 1: Requests originating from Android WebViewAssetLoader virtual domain
+    # Allow if referer matches authorized app environments or your domain
     RewriteCond %{HTTP_REFERER} ^https?://appassets\.androidplatform\.net [NC,OR]
-
-    # Whitelist 2: Requests originating from your own website domain (ithageneia.nimarahbar.com / nimarahbar.com)
     RewriteCond %{HTTP_REFERER} ^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com [NC,OR]
-
-    # Whitelist 3: Requests with Android localhost / Capacitor / Cordova / Native schemes
     RewriteCond %{HTTP_REFERER} ^(capacitor|ionic|http://localhost|https://localhost) [NC]
+    RewriteRule \.(mp3|ogg|m4a|wav)$ - [L]
 
-    # If none of the whitelisted conditions match (e.g. empty Referer from browser address bar or external link), deny access with 403 Forbidden
-    RewriteRule ^audio/ - [F,L]
+    # Otherwise block any audio requests that didn't match the whitelist
+    RewriteRule \.(mp3|ogg|m4a|wav)$ - [F,NC,L]
 </IfModule>
 
-# 3. Byte-Range Streaming & Caching for Audio Files (.mp3)
-# Enables timeline scrubbing / seeking on mobile devices and WebViews
+# 3. Fallback Apache FilesMatch Protection (Works even if mod_rewrite is disabled)
+<FilesMatch "\.(mp3|ogg|m4a|wav)$">
+    <IfModule mod_authz_core.c>
+        # Require valid referer
+        SetEnvIfNoCase Referer "^https?://appassets\.androidplatform\.net" allowed_audio
+        SetEnvIfNoCase Referer "^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com" allowed_audio
+        SetEnvIfNoCase Referer "^(capacitor|ionic|http://localhost|https://localhost)" allowed_audio
+        Require env allowed_audio
+    </IfModule>
+</FilesMatch>
+
+# 4. Byte-Range Streaming & Caching for Audio Files (.mp3)
 <IfModule mod_headers.c>
     <FilesMatch "\.(mp3|ogg|m4a|wav)$">
         Header set Accept-Ranges "bytes"
@@ -42,7 +46,7 @@
     </FilesMatch>
 </IfModule>
 
-# 4. Browser Caching for Fast Loading
+# 5. Browser Caching for Fast Loading
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 2 days"
@@ -55,10 +59,10 @@
     ExpiresByType audio/mpeg "access plus 1 year"
 </IfModule>
 
-# 5. Gzip Compression for Fast Page Loads
+# 6. Gzip Compression for Fast Page Loads
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
 </IfModule>
 
-# 6. UTF-8 Character Encoding
+# 7. UTF-8 Character Encoding
 AddDefaultCharset UTF-8
