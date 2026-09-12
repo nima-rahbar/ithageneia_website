@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android</title>
+
+  <!-- Preload Critical LCP Asset -->
+  <link rel="preload" as="image" href="assets/main-light.png" type="image/png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ithageneia.nimarahbar.com/">
+
+  <!-- Favicons & App Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
@@ -20,17 +28,24 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#243673">
   <meta name="description"
     content="Η επίσημη εφαρμογή Android για τις εξετάσεις Ελληνικής Ιθαγένειας (Π.Ε.Γ.Π.). Πλήρης τράπεζα θεμάτων, ηχητική κατανόηση, προσομοίωση εξετάσεων, εξάσκηση εκτός σύνδεσης και βελτιστοποίηση για αναδιπλούμενες συσκευές (Foldables & Tablets).">
-  <meta name="theme-color" content="#243673">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android">
   <meta property="og:description"
     content="Προετοιμαστείτε για το Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση. 920+ ερωτήσεις, 50 ηχητικά θέματα, υποστήριξη Foldable συσκευών, διαθέσιμο στο Google Play με μόνο 10€.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ithageneia.nimarahbar.com">
+  <meta property="og:url" content="https://ithageneia.nimarahbar.com/">
+  <meta property="og:image" content="https://ithageneia.nimarahbar.com/assets/main-light.png">
+  <meta property="og:image:alt" content="Προεπισκόπηση Εφαρμογής Ιθαγένεια Π.Ε.Γ.Π.">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android">
+  <meta name="twitter:description" content="920+ ερωτήσεις, 50 ηχητικά θέματα, υποστήριξη Foldable συσκευών, διαθέσιμο στο Google Play.">
+  <meta name="twitter:image" content="https://ithageneia.nimarahbar.com/assets/main-light.png">
 
   <!-- Google Fonts & Bootstrap Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +61,29 @@
 
   <!-- Custom Theme Styles (nimarahbar.com Color Palette) -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data (JSON-LD Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ιθαγένεια Π.Ε.Γ.Π.",
+    "operatingSystem": "Android",
+    "applicationCategory": "EducationalApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "10.00",
+      "priceCurrency": "EUR"
+    },
+    "installUrl": "https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia",
+    "author": {
+      "@type": "Person",
+      "name": "Nima Rahbar",
+      "url": "https://nimarahbar.com"
+    },
+    "description": "Η επίσημη εφαρμογή Android για τις εξετάσεις Ελληνικής Ιθαγένειας (Π.Ε.Γ.Π.)."
+  }
+  </script>
 </head>
 
 <body>
@@ -97,6 +135,9 @@
       </div>
     </div>
   </nav>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
 
   <!-- Hero Section -->
   <header class="hero-section">
@@ -249,7 +290,7 @@
             <div class="feature-icon-wrapper">
               <i class="bi bi-journal-check"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">920+ Επίσημες Ερωτήσεις</h4>
+            <h3 class="h5 text-navy-custom mb-2">920+ Επίσημες Ερωτήσεις</h3>
             <p class="text-muted small mb-0">
               Πλήρης κάλυψη όλων των ερωτήσεων της Τράπεζας Θεμάτων του Υπουργείου Εσωτερικών: πολλαπλής επιλογής (MC4,
               MC3), Σωστό/Λάθος, αντιστοιχίσεις, συμπλήρωση κενών και ερωτήσεις χαρτών.
@@ -263,7 +304,7 @@
             <div class="feature-icon-wrapper" style="background: rgba(36, 54, 115, 0.1); color: var(--nr-navy);">
               <i class="bi bi-headphones"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h4>
+            <h3 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h3>
             <p class="text-muted small mb-0">
               Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα των
               επίσημων εξετάσεων, με δυνατότητα άμεσης αναπαραγωγής χωρίς να καταλαμβάνεται χώρος στη συσκευή σας.
@@ -277,7 +318,7 @@
             <div class="feature-icon-wrapper">
               <i class="bi bi-stopwatch"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">Προσομοίωση Πραγματικού Test</h4>
+            <h3 class="h5 text-navy-custom mb-2">Προσομοίωση Πραγματικού Test</h3>
             <p class="text-muted small mb-0">
               Δοκιμάστε τις δυνάμεις σας υπό πραγματικές συνθήκες εξετάσεων με χρονόμετρο, αυτόματη βαθμολόγηση, ακριβή
               υπολογισμό ποσοστού επιτυχίας και αναλυτική αναφορά λαθών.
@@ -291,7 +332,7 @@
             <div class="feature-icon-wrapper" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
               <i class="bi bi-wifi-off"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">Λειτουργία Εκτός Σύνδεσης (Offline)</h4>
+            <h3 class="h5 text-navy-custom mb-2">Λειτουργία Εκτός Σύνδεσης (Offline)</h3>
             <p class="text-muted small mb-0">
               Διαβάστε παντού, ακόμα και χωρίς πρόσβαση στο ίντερνετ. Όλες οι ερωτήσεις, οι απαντήσεις και οι
               επεξηγήσεις αποθηκεύονται τοπικά στη συσκευή σας.
@@ -305,7 +346,7 @@
             <div class="feature-icon-wrapper" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
               <i class="bi bi-bookmark-star"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">Σημειώσεις & Αποθήκευση</h4>
+            <h3 class="h5 text-navy-custom mb-2">Σημειώσεις & Αποθήκευση</h3>
             <p class="text-muted small mb-0">
               Αποθηκεύστε δύσκολες ερωτήσεις με ένα κλικ για γρήγορη επανάληψη πριν την ημέρα της εξέτασης, διατηρώντας
               το δικό σας προσωπικό αρχείο μελέτης.
@@ -319,7 +360,7 @@
             <div class="feature-icon-wrapper" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
               <i class="bi bi-lightning-charge"></i>
             </div>
-            <h4 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά &amp; Ταχύτατη</h4>
+            <h3 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά &amp; Ταχύτατη</h3>
             <p class="text-muted small mb-0">
               Μέγεθος αρχείου μόλις ~27 MB! Άμεση εκκίνηση, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε
               κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
@@ -491,7 +532,7 @@
               <span class="topic-badge bg-primary text-white">Ενότητα 1</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">245 Ερωτήσεις</span>
             </div>
-            <h4 class="h5 text-navy-custom">🏛️ Ελληνική Ιστορία</h4>
+            <h3 class="h5 text-navy-custom">🏛️ Ελληνική Ιστορία</h3>
             <p class="text-muted small mb-0">
               Αρχαία Ελλάδα, Βυζαντινή περίοδος, Ελληνική Επανάσταση του 1821, Νεότερη & Σύγχρονη Ιστορία, Β' Παγκόσμιος
               Πόλεμος και Μεταπολίτευση.
@@ -506,7 +547,7 @@
               <span class="topic-badge bg-primary text-white">Ενότητα 2</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">120 Ερωτήσεις</span>
             </div>
-            <h4 class="h5 text-navy-custom">🗺️ Γεωγραφία της Ελλάδας</h4>
+            <h3 class="h5 text-navy-custom">🗺️ Γεωγραφία της Ελλάδας</h3>
             <p class="text-muted small mb-0">
               Γεωγραφικά διαμερίσματα, νομοί και πρωτεύουσες, βουνά, ποτάμια, λίμνες, νησιά και βασικά χαρακτηριστικά
               της ελληνικής επικράτειας με ερωτήσεις χαρτών.
@@ -521,7 +562,7 @@
               <span class="topic-badge bg-primary text-white">Ενότητα 3</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">140 Ερωτήσεις</span>
             </div>
-            <h4 class="h5 text-navy-custom">🎭 Ελληνικός Πολιτισμός</h4>
+            <h3 class="h5 text-navy-custom">🎭 Ελληνικός Πολιτισμός</h3>
             <p class="text-muted small mb-0">
               Τέχνες, παραδόσεις, λογοτεχνία, ήθη και έθιμα, μουσική παράδοση, μνημεία παγκόσμιας πολιτιστικής
               κληρονομιάς UNESCO και σπουδαίοι δημιουργοί.
@@ -536,7 +577,7 @@
               <span class="topic-badge bg-navy-custom text-white">Ενότητα 4</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">180 Ερωτήσεις</span>
             </div>
-            <h4 class="h5 text-navy-custom">⚖️ Πολιτικοί Θεσμοί & Σύνταγμα</h4>
+            <h3 class="h5 text-navy-custom">⚖️ Πολιτικοί Θεσμοί & Σύνταγμα</h3>
             <p class="text-muted small mb-0">
               Το Πολίτευμα της Ελλάδας, θεμελιώδη ατομικά και κοινωνικά δικαιώματα, Βουλή των Ελλήνων, Κυβέρνηση,
               Δικαστική εξουσία και Ευρωπαϊκή Ένωση.
@@ -551,7 +592,7 @@
               <span class="topic-badge bg-navy-custom text-white">Ενότητα 5</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">50 Ηχητικά Θέματα</span>
             </div>
-            <h4 class="h5 text-navy-custom">🎧 Κατανόηση Προφορικού Λόγου</h4>
+            <h3 class="h5 text-navy-custom">🎧 Κατανόηση Προφορικού Λόγου</h3>
             <p class="text-muted small mb-0">
               Ακρόαση διαλόγων, ειδήσεων, ανακοινώσεων και συνεντεύξεων με αντίστοιχες ερωτήσεις κατανόησης και
               επαλήθευσης απαντήσεων.
@@ -566,7 +607,7 @@
               <span class="topic-badge bg-navy-custom text-white">Ενότητα 6</span>
               <span class="badge bg-light text-navy-custom border fw-semibold">126 Θέματα & 51 Εικόνες</span>
             </div>
-            <h4 class="h5 text-navy-custom">🗣️ Προφορικά & ✍️ Γραπτός Λόγος</h4>
+            <h3 class="h5 text-navy-custom">🗣️ Προφορικά & ✍️ Γραπτός Λόγος</h3>
             <p class="text-muted small mb-0">
               Πλήρης προσομοίωση προφορικής εξέτασης με τις 51 επίσημες έγχρωμες εικόνες (stimuli) και υπόδειγμα Β1,
               καθώς και studio 100 γραπτών θεμάτων με ασκήσεις και έκθεση.
@@ -736,6 +777,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer-section">
