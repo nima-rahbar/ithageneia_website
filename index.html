@@ -7,7 +7,7 @@
   <title>Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android</title>
 
   <!-- Preload Critical LCP Asset -->
-  <link rel="preload" as="image" href="assets/main-light.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/main-light.webp" type="image/webp" fetchpriority="high">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://ithageneia.nimarahbar.com/">
@@ -40,17 +40,24 @@
   <meta property="og:url" content="https://ithageneia.nimarahbar.com/">
   <meta property="og:image" content="https://ithageneia.nimarahbar.com/assets/main-light.webp">
   <meta property="og:image:alt" content="Προεπισκόπηση Εφαρμογής Ιθαγένεια Π.Ε.Γ.Π.">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="412">
+  <meta property="og:image:height" content="846">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ιθαγένεια Π.Ε.Γ.Π. | Επίσημη Εφαρμογή Android">
-  <meta name="twitter:description" content="920+ ερωτήσεις, 50 ηχητικά θέματα, υποστήριξη Foldable συσκευών, διαθέσιμο στο Google Play.">
+  <meta name="twitter:description"
+    content="920+ ερωτήσεις, 50 ηχητικά θέματα, υποστήριξη Foldable συσκευών, διαθέσιμο στο Google Play.">
   <meta name="twitter:image" content="https://ithageneia.nimarahbar.com/assets/main-light.webp">
 
   <!-- Local Web Fonts & Bootstrap Icons -->
   <link rel="stylesheet" href="assets/fonts/fonts.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </noscript>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -93,7 +100,8 @@
     <div class="container py-1">
       <a class="navbar-brand d-flex align-items-center gap-2" href="/">
         <div class="navbar-brand-logo">
-          <img class="img-responsive" src="assets/logo.webp" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android" width="70" height="70">
+          <img class="img-responsive" src="assets/logo.webp" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android"
+            width="70" height="70">
         </div>
         <div>
           <span class="fw-bold fs-5 text-navy-custom d-block lh-1">Ιθαγένεια</span>
@@ -138,644 +146,661 @@
   <!-- Main Landmark -->
   <main id="main-content">
 
-  <!-- Hero Section -->
-  <header class="hero-section">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-7">
-          <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-            <div class="hero-badge mb-0">
-              <i class="bi bi-shield-check text-primary-custom"></i>
-              <span>Επίσημη Τράπεζα Θεμάτων Π.Ε.Γ.Π.</span>
-            </div>
-            <div class="hero-badge mb-0"
-              style="background: rgba(0, 155, 223, 0.12); border-color: rgba(0, 155, 223, 0.35); color: var(--nr-navy);">
-              <i class="bi bi-phone-flip text-primary-custom"></i>
-              <span>Foldable &amp; Tablet Ready</span>
-            </div>
-          </div>
-
-          <h1 class="hero-title mb-3">
-            Προετοιμαστείτε για τις Εξετάσεις <span class="text-primary-custom">Ιθαγένειας</span> στο Κινητό σας
-          </h1>
-
-          <p class="hero-subtitle mb-4">
-            Η ολοκληρωμένη εφαρμογή Android για την απόκτηση του <strong>Πιστοποιητικού Επάρκειας Γνώσεων για
-              Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. Πλήρης κάλυψη 920+ ερωτήσεων, άμεση ηχητική ανάγνωση, πραγματικές
-            προσομοιώσεις εξετάσεων και λειτουργία εκτός σύνδεσης.
-          </p>
-
-          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
-            <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank"
-              rel="noopener noreferrer" class="btn-navy-custom text-decoration-none">
-              <i class="bi bi-google-play"></i>
-              <span>Google Play Store</span>
-            </a>
-            <a href="#features" class="btn-outline-navy text-decoration-none">
-              <i class="bi bi-info-circle"></i>
-              <span>Μάθετε περισσότερα</span>
-            </a>
-          </div>
-
-          <!-- Quick Metrics Badges -->
-          <div class="row g-3 pt-2">
-            <div class="col-6 col-sm-3">
-              <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
-                <div class="fw-bold fs-4 text-navy-custom lh-1">920+</div>
-                <small class="text-muted" style="font-size: 0.75rem;">Ερωτήσεις</small>
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+              <div class="hero-badge mb-0">
+                <i class="bi bi-shield-check text-primary-custom"></i>
+                <span>Επίσημη Τράπεζα Θεμάτων Π.Ε.Γ.Π.</span>
+              </div>
+              <div class="hero-badge mb-0"
+                style="background: rgba(0, 155, 223, 0.12); border-color: rgba(0, 155, 223, 0.35); color: var(--nr-navy);">
+                <i class="bi bi-phone-flip text-primary-custom"></i>
+                <span>Foldable &amp; Tablet Ready</span>
               </div>
             </div>
-            <div class="col-6 col-sm-3">
-              <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
-                <div class="fw-bold fs-4 text-primary-custom lh-1">50</div>
-                <small class="text-muted" style="font-size: 0.75rem;">Ηχητικά Θέματα</small>
-              </div>
-            </div>
-            <div class="col-6 col-sm-3">
-              <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
-                <div class="fw-bold fs-4 text-navy-custom lh-1">~27 MB</div>
-                <small class="text-muted" style="font-size: 0.75rem;">Ελαφριά Λήψη</small>
-              </div>
-            </div>
-            <div class="col-6 col-sm-3">
-              <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
-                <div class="fw-bold fs-4 text-success lh-1">10 €</div>
-                <small class="text-muted" style="font-size: 0.75rem;">Εφάπαξ Αγορά</small>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Phone Mockup Preview with Light / Dark Slider -->
-        <div class="col-lg-5">
-          <div class="mockup-container">
-            <!-- Theme Switch Pills -->
-            <div class="theme-switch-pills">
-              <button type="button" class="theme-switch-btn active" id="themeBtnLight">
-                <i class="bi bi-sun-fill text-warning"></i> <span>Φωτεινό</span>
-              </button>
-              <button type="button" class="theme-switch-btn" id="themeBtnDark">
-                <i class="bi bi-moon-stars-fill text-primary"></i> <span>Σκούρο</span>
-              </button>
+            <h1 class="hero-title mb-3">
+              Προετοιμαστείτε για τις Εξετάσεις <span class="text-primary-custom">Ιθαγένειας</span> στο Κινητό σας
+            </h1>
+
+            <p class="hero-subtitle mb-4">
+              Η ολοκληρωμένη εφαρμογή Android για την απόκτηση του <strong>Πιστοποιητικού Επάρκειας Γνώσεων για
+                Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. Πλήρης κάλυψη 920+ ερωτήσεων, άμεση ηχητική ανάγνωση, πραγματικές
+              προσομοιώσεις εξετάσεων και λειτουργία εκτός σύνδεσης.
+            </p>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+              <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank"
+                rel="noopener noreferrer" class="btn-navy-custom text-decoration-none">
+                <i class="bi bi-google-play"></i>
+                <span>Google Play Store</span>
+              </a>
+              <a href="#features" class="btn-outline-navy text-decoration-none">
+                <i class="bi bi-info-circle"></i>
+                <span>Μάθετε περισσότερα</span>
+              </a>
             </div>
 
-            <!-- Phone Bezel Frame -->
-            <div class="hero-phone-mockup-frame">
-              <div class="theme-compare-box at-edge" id="themeCompareBox">
-                <!-- Base Image: Light Mode (main-light.webp) -->
-                <img src="assets/main-light.webp" alt="Ιθαγένεια Εφαρμογή - Φωτεινό Θέμα (Light Mode)"
-                  class="theme-compare-img-base" id="themeImgLight" width="412" height="846">
-
-                <!-- Overlay Image: Dark Mode (main-dark.webp) -->
-                <div class="theme-compare-img-overlay" id="themeCompareOverlay">
-                  <img src="assets/main-dark.webp" alt="Ιθαγένεια Εφαρμογή - Σκούρο Θέμα (Dark Mode)" id="themeImgDark" width="412" height="846">
+            <!-- Quick Metrics Badges -->
+            <div class="row g-3 pt-2">
+              <div class="col-6 col-sm-3">
+                <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
+                  <div class="fw-bold fs-4 text-navy-custom lh-1">920+</div>
+                  <small class="text-muted" style="font-size: 0.75rem;">Ερωτήσεις</small>
                 </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
+                  <div class="fw-bold fs-4 text-primary-custom lh-1">50</div>
+                  <small class="text-muted" style="font-size: 0.75rem;">Ηχητικά Θέματα</small>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
+                  <div class="fw-bold fs-4 text-navy-custom lh-1">~27 MB</div>
+                  <small class="text-muted" style="font-size: 0.75rem;">Ελαφριά Λήψη</small>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="border rounded-3 p-2 bg-white text-center shadow-sm">
+                  <div class="fw-bold fs-4 text-success lh-1">10 €</div>
+                  <small class="text-muted" style="font-size: 0.75rem;">Εφάπαξ Αγορά</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- Divider Line & Knob -->
-                <div class="theme-slider-divider" id="themeSliderDivider">
-                  <div class="theme-slider-knob">
-                    <i class="bi bi-arrow-left-right"></i>
+          <!-- Phone Mockup Preview with Light / Dark Slider -->
+          <div class="col-lg-5">
+            <div class="mockup-container">
+              <!-- Theme Switch Pills -->
+              <div class="theme-switch-pills">
+                <button type="button" class="theme-switch-btn active" id="themeBtnLight">
+                  <i class="bi bi-sun-fill text-warning"></i> <span>Φωτεινό</span>
+                </button>
+                <button type="button" class="theme-switch-btn" id="themeBtnDark">
+                  <i class="bi bi-moon-stars-fill text-primary"></i> <span>Σκούρο</span>
+                </button>
+              </div>
+
+              <!-- Phone Bezel Frame -->
+              <div class="hero-phone-mockup-frame">
+                <div class="theme-compare-box at-edge" id="themeCompareBox">
+                  <!-- Base Image: Light Mode (main-light.webp) -->
+                  <img src="assets/main-light.webp" alt="Ιθαγένεια Εφαρμογή - Φωτεινό Θέμα (Light Mode)"
+                    class="theme-compare-img-base" id="themeImgLight" width="412" height="846">
+
+                  <!-- Overlay Image: Dark Mode (main-dark.webp) -->
+                  <div class="theme-compare-img-overlay" id="themeCompareOverlay">
+                    <img src="assets/main-dark.webp" alt="Ιθαγένεια Εφαρμογή - Σκούρο Θέμα (Dark Mode)"
+                      id="themeImgDark" width="412" height="846">
                   </div>
+
+                  <!-- Divider Line & Knob -->
+                  <div class="theme-slider-divider" id="themeSliderDivider">
+                    <div class="theme-slider-knob">
+                      <i class="bi bi-arrow-left-right"></i>
+                    </div>
+                  </div>
+
+                  <!-- Invisible Screen Touch/Drag Range -->
+                  <input type="range" min="0" max="100" value="0" class="theme-screen-range" id="themeScreenRange"
+                    aria-label="Εναλλαγή Φωτεινού και Σκούρου Θέματος στην οθόνη">
                 </div>
-
-                <!-- Invisible Screen Touch/Drag Range -->
-                <input type="range" min="0" max="100" value="0" class="theme-screen-range" id="themeScreenRange"
-                  aria-label="Εναλλαγή Φωτεινού και Σκούρου Θέματος στην οθόνη">
               </div>
-            </div>
 
-            <!-- Bottom Range Slider Control -->
-            <div class="theme-slider-bar-wrapper mt-3 text-center">
-              <div class="d-flex align-items-center justify-content-between mb-1 px-1">
-                <small class="fw-bold text-muted d-flex align-items-center gap-1">
-                  <i class="bi bi-sun-fill text-warning"></i> Light
+              <!-- Bottom Range Slider Control -->
+              <div class="theme-slider-bar-wrapper mt-3 text-center">
+                <div class="d-flex align-items-center justify-content-between mb-1 px-1">
+                  <small class="fw-bold text-muted d-flex align-items-center gap-1">
+                    <i class="bi bi-sun-fill text-warning"></i> Light
+                  </small>
+                  <small
+                    class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-2 py-1"
+                    id="sliderModeLabel">
+                    Φωτεινό (Light)
+                  </small>
+                  <small class="fw-bold text-muted d-flex align-items-center gap-1">
+                    Dark <i class="bi bi-moon-stars-fill text-primary"></i>
+                  </small>
+                </div>
+                <input type="range" min="0" max="100" value="0" class="form-range custom-theme-range"
+                  id="themeBottomRange" aria-label="Ρυθμιστικό Φωτεινού / Σκούρου Θέματος">
+                <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">
+                  <i class="bi bi-sliders me-1"></i>Σύρετε ή πατήστε για εναλλαγή Light &amp; Dark mode
                 </small>
-                <small class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-2 py-1"
-                  id="sliderModeLabel">
-                  Φωτεινό (Light)
-                </small>
-                <small class="fw-bold text-muted d-flex align-items-center gap-1">
-                  Dark <i class="bi bi-moon-stars-fill text-primary"></i>
-                </small>
-              </div>
-              <input type="range" min="0" max="100" value="0" class="form-range custom-theme-range"
-                id="themeBottomRange" aria-label="Ρυθμιστικό Φωτεινού / Σκούρου Θέματος">
-              <small class="text-muted d-block mt-1" style="font-size: 0.72rem;">
-                <i class="bi bi-sliders me-1"></i>Σύρετε ή πατήστε για εναλλαγή Light &amp; Dark mode
-              </small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- App Features Section -->
-  <section id="features" class="py-5 bg-white">
-    <div class="container py-4">
-      <div class="section-header text-center max-w-700 mx-auto">
-        <span class="section-tag">Ολοκληρωμενη Προετοιμασια</span>
-        <h2 class="section-title">Όλα όσα χρειάζεστε για να πετύχετε στις εξετάσεις</h2>
-        <p class="text-muted mt-2">
-          Η εφαρμογή σχεδιάστηκε από επαγγελματίες εκπαιδευτικούς και μηχανικούς λογισμικού, παρέχοντας όλα τα εργαλεία
-          για εγγυημένη επιτυχία.
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Feature 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="bi bi-journal-check"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">920+ Επίσημες Ερωτήσεις</h3>
-            <p class="text-muted small mb-0">
-              Πλήρης κάλυψη όλων των ερωτήσεων της Τράπεζας Θεμάτων του Υπουργείου Εσωτερικών: πολλαπλής επιλογής (MC4,
-              MC3), Σωστό/Λάθος, αντιστοιχίσεις, συμπλήρωση κενών και ερωτήσεις χαρτών.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper" style="background: rgba(36, 54, 115, 0.1); color: var(--nr-navy);">
-              <i class="bi bi-headphones"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h3>
-            <p class="text-muted small mb-0">
-              Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα των
-              επίσημων εξετάσεων, με δυνατότητα άμεσης αναπαραγωγής χωρίς να καταλαμβάνεται χώρος στη συσκευή σας.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <i class="bi bi-stopwatch"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">Προσομοίωση Πραγματικού Test</h3>
-            <p class="text-muted small mb-0">
-              Δοκιμάστε τις δυνάμεις σας υπό πραγματικές συνθήκες εξετάσεων με χρονόμετρο, αυτόματη βαθμολόγηση, ακριβή
-              υπολογισμό ποσοστού επιτυχίας και αναλυτική αναφορά λαθών.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
-              <i class="bi bi-wifi-off"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">Λειτουργία Εκτός Σύνδεσης (Offline)</h3>
-            <p class="text-muted small mb-0">
-              Διαβάστε παντού, ακόμα και χωρίς πρόσβαση στο ίντερνετ. Όλες οι ερωτήσεις, οι απαντήσεις και οι
-              επεξηγήσεις αποθηκεύονται τοπικά στη συσκευή σας.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
-              <i class="bi bi-bookmark-star"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">Σημειώσεις & Αποθήκευση</h3>
-            <p class="text-muted small mb-0">
-              Αποθηκεύστε δύσκολες ερωτήσεις με ένα κλικ για γρήγορη επανάληψη πριν την ημέρα της εξέτασης, διατηρώντας
-              το δικό σας προσωπικό αρχείο μελέτης.
-            </p>
-          </div>
-        </div>
-
-        <!-- Feature 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
-              <i class="bi bi-lightning-charge"></i>
-            </div>
-            <h3 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά &amp; Ταχύτατη</h3>
-            <p class="text-muted small mb-0">
-              Μέγεθος αρχείου μόλις ~27 MB! Άμεση εκκίνηση, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε
-              κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Foldables Highlight Banner inside Features -->
-      <div
-        class="mt-5 p-4 rounded-4 bg-subtle-custom border d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 shadow-sm">
-        <div class="d-flex align-items-center gap-3">
-          <div class="feature-icon-wrapper mb-0"
-            style="background: rgba(0, 155, 223, 0.12); color: var(--nr-primary); width: 50px; height: 50px;">
-            <i class="bi bi-phone-flip fs-4"></i>
-          </div>
-          <div>
-            <h3 class="h5 text-navy-custom mb-1 fw-bold">Βελτιστοποιημένη για Foldable Συσκευές &amp; Tablets</h3>
-            <p class="text-muted small mb-0">Απολαύστε adaptive dual-pane εμπειρία με ταυτόχρονη προβολή ευρετηρίου και
-              ερωτήσεων σε αναδιπλούμενες οθόνες.</p>
-          </div>
-        </div>
-        <a href="#foldables" class="btn-outline-navy btn-sm text-nowrap">
-          <span>Δείτε τη λειτουργία Foldable</span>
-          <i class="bi bi-arrow-down-short fs-5"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Foldables & Tablets Showcase Section -->
-  <section id="foldables" class="py-5 foldable-showcase-section">
-    <div class="container py-4">
-      <div class="section-header text-center max-w-700 mx-auto mb-5">
-        <div class="foldable-badge-pill mb-3">
-          <i class="bi bi-phone-flip"></i>
-          <span>Next-Gen Display Architecture</span>
-        </div>
-        <h2 class="section-title mb-3">Έξυπνη Προσαρμογή σε Foldables &amp; Tablets</h2>
-        <p class="text-white-50 mt-2" style="font-size: 1.05rem; line-height: 1.6;">
-          Η εφαρμογή σχεδιάστηκε από την αρχή με adaptive responsive αρχιτεκτονική. Είτε διαβάζετε στο κινητό σας εν
-          κινήσει, είτε ξεδιπλώνετε τη συσκευή σας για μια εμπειρία μεγάλης οθόνης, η μελέτη προσαρμόζεται άμεσα στις
-          ανάγκες σας.
-        </p>
-      </div>
-
-      <!-- Devices Showcase Grid -->
-      <div class="row align-items-stretch g-4 mb-5">
-        <!-- Folded (Cover Screen / Smartphone) -->
-        <div class="col-lg-4">
-          <div class="device-card-wrapper text-center">
-            <span class="device-label-pill phone-mode">
-              <i class="bi bi-phone"></i> Κλειστό (Cover Screen) &bull; Phone Mode
-            </span>
-            <div class="phone-device-frame mb-3">
-              <img src="assets/Un-Fold.webp" alt="Ιθαγένεια Εφαρμογή σε Smartphone / Cover Screen" loading="lazy" width="600" height="700">
-            </div>
-            <h3 class="h5 fw-bold text-white mb-2">Συμπαγής &amp; Ευέλικτη Προβολή</h3>
-            <p class="text-white-50 small mb-0">
-              Καθαρή διάταξη μίας στήλης με κάτω μπάρα πλοήγησης και πτυσσόμενο ευρετήριο, ιδανική για γρήγορη εξάσκηση
-              και επανάληψη με το ένα χέρι.
-            </p>
-          </div>
-        </div>
-
-        <!-- Unfolded (Inner Display / Tablet Dual-Pane) -->
-        <div class="col-lg-8">
-          <div class="device-card-wrapper">
-            <span class="device-label-pill fold-mode">
-              <i class="bi bi-tablet-landscape"></i> Ξεδιπλωμένο (Inner Display) &bull; Dual-Pane Tablet Mode
-            </span>
-            <div class="foldable-device-frame mb-3">
-              <img src="assets/Fold.webp" alt="Ιθαγένεια Εφαρμογή σε Foldable Inner Screen / Tablet Dual-Pane"
-                loading="lazy" width="1200" height="700">
-            </div>
-            <div class="row g-3 text-start mt-2">
-              <div class="col-md-6">
-                <h3 class="h5 fw-bold text-white mb-2">Πολυπαραθυρική Διάταξη (Dual-Pane)</h3>
-                <p class="text-white-50 small mb-0">
-                  Το πλήρες ευρετήριο των 918+ ερωτήσεων προβάλλεται μόνιμα στα αριστερά, επιτρέποντας άμεσο άλμα σε
-                  οποιοδήποτε θέμα χωρίς έξοδο από την τρέχουσα ερώτηση.
-                </p>
-              </div>
-              <div class="col-md-6">
-                <h3 class="h5 fw-bold text-white mb-2">Εργονομική Πλευρική Μπάρα (Side Rail)</h3>
-                <p class="text-white-50 small mb-0">
-                  Κάθετη μπάρα πλοήγησης για άμεση εναλλαγή μεταξύ Μελέτης, Test, Προφορικών και Αγαπημένων,
-                  βελτιστοποιημένη για εύκολο χειρισμό σε μεγάλες διαστάσεις.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <!-- Specs / Highlights Grid -->
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="foldable-spec-pill">
-            <div class="foldable-spec-icon">
-              <i class="bi bi-layout-split"></i>
+    <!-- App Features Section -->
+    <section id="features" class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="section-tag">Ολοκληρωμενη Προετοιμασια</span>
+          <h2 class="section-title">Όλα όσα χρειάζεστε για να πετύχετε στις εξετάσεις</h2>
+          <p class="text-muted mt-2">
+            Η εφαρμογή σχεδιάστηκε από επαγγελματίες εκπαιδευτικούς και μηχανικούς λογισμικού, παρέχοντας όλα τα
+            εργαλεία
+            για εγγυημένη επιτυχία.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-journal-check"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">920+ Επίσημες Ερωτήσεις</h3>
+              <p class="text-muted small mb-0">
+                Πλήρης κάλυψη όλων των ερωτήσεων της Τράπεζας Θεμάτων του Υπουργείου Εσωτερικών: πολλαπλής επιλογής
+                (MC4,
+                MC3), Σωστό/Λάθος, αντιστοιχίσεις, συμπλήρωση κενών και ερωτήσεις χαρτών.
+              </p>
             </div>
-            <h3 class="h6 text-white fw-bold mb-2">Adaptive Dual-Pane</h3>
-            <p class="text-white-50 small mb-0">
-              Αυτόματη επέκταση σε διπλό παράθυρο σε πλάτος άνω των 600dp, με άμεση αναγνώριση του fold/unfold state της
-              συσκευής.
-            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper" style="background: rgba(36, 54, 115, 0.1); color: var(--nr-navy);">
+                <i class="bi bi-headphones"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h3>
+              <p class="text-muted small mb-0">
+                Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα
+                των
+                επίσημων εξετάσεων, με δυνατότητα άμεσης αναπαραγωγής χωρίς να καταλαμβάνεται χώρος στη συσκευή σας.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <i class="bi bi-stopwatch"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">Προσομοίωση Πραγματικού Test</h3>
+              <p class="text-muted small mb-0">
+                Δοκιμάστε τις δυνάμεις σας υπό πραγματικές συνθήκες εξετάσεων με χρονόμετρο, αυτόματη βαθμολόγηση,
+                ακριβή
+                υπολογισμό ποσοστού επιτυχίας και αναλυτική αναφορά λαθών.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
+                <i class="bi bi-wifi-off"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">Λειτουργία Εκτός Σύνδεσης (Offline)</h3>
+              <p class="text-muted small mb-0">
+                Διαβάστε παντού, ακόμα και χωρίς πρόσβαση στο ίντερνετ. Όλες οι ερωτήσεις, οι απαντήσεις και οι
+                επεξηγήσεις αποθηκεύονται τοπικά στη συσκευή σας.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
+                <i class="bi bi-bookmark-star"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">Σημειώσεις & Αποθήκευση</h3>
+              <p class="text-muted small mb-0">
+                Αποθηκεύστε δύσκολες ερωτήσεις με ένα κλικ για γρήγορη επανάληψη πριν την ημέρα της εξέτασης,
+                διατηρώντας
+                το δικό σας προσωπικό αρχείο μελέτης.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h3 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά &amp; Ταχύτατη</h3>
+              <p class="text-muted small mb-0">
+                Μέγεθος αρχείου μόλις ~27 MB! Άμεση εκκίνηση, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε
+                κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-3">
-          <div class="foldable-spec-pill">
-            <div class="foldable-spec-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">
-              <i class="bi bi-arrows-angle-expand"></i>
+        <!-- Foldables Highlight Banner inside Features -->
+        <div
+          class="mt-5 p-4 rounded-4 bg-subtle-custom border d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 shadow-sm">
+          <div class="d-flex align-items-center gap-3">
+            <div class="feature-icon-wrapper mb-0"
+              style="background: rgba(0, 155, 223, 0.12); color: var(--nr-primary); width: 50px; height: 50px;">
+              <i class="bi bi-phone-flip fs-4"></i>
             </div>
-            <h3 class="h6 text-white fw-bold mb-2">Seamless Continuity</h3>
-            <p class="text-white-50 small mb-0">
-              Ανοίξτε ή διπλώστε τη συσκευή σας ανά πάσα στιγμή χωρίς καμία απώλεια προόδου ή διακοπή της ενεργής σας
-              δοκιμασίας.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="foldable-spec-pill">
-            <div class="foldable-spec-icon" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">
-              <i class="bi bi-moon-stars"></i>
+            <div>
+              <h3 class="h5 text-navy-custom mb-1 fw-bold">Βελτιστοποιημένη για Foldable Συσκευές &amp; Tablets</h3>
+              <p class="text-muted small mb-0">Απολαύστε adaptive dual-pane εμπειρία με ταυτόχρονη προβολή ευρετηρίου
+                και
+                ερωτήσεων σε αναδιπλούμενες οθόνες.</p>
             </div>
-            <h3 class="h6 text-white fw-bold mb-2">OLED Dark Mode</h3>
-            <p class="text-white-50 small mb-0">
-              Σκούρο θέμα υψηλής αντίθεσης, ειδικά προσαρμοσμένο για OLED οθόνες αναδιπλούμενων συσκευών με ελάχιστη
-              κατανάλωση.
-            </p>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="foldable-spec-pill">
-            <div class="foldable-spec-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
-              <i class="bi bi-compass"></i>
-            </div>
-            <h3 class="h6 text-white fw-bold mb-2">Side Rail Navigation</h3>
-            <p class="text-white-50 small mb-0">
-              Πλευρική μπάρα πλοήγησης που διατηρεί όλες τις βασικές λειτουργίες σε απόσταση ενός αντίχειρα χωρίς
-              περιττά κλικ.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Exam Syllabus Breakdown Section -->
-  <section id="syllabus" class="py-5 bg-subtle-custom border-top border-bottom">
-    <div class="container py-4">
-      <div class="section-header text-center max-w-700 mx-auto">
-        <span class="section-tag">Θεματικες Ενοτητες</span>
-        <h2 class="section-title">Κάλυψη Όλων των Εξεταστέων Γνωστικών Πεδίων</h2>
-        <p class="text-muted mt-2">
-          Η εφαρμογή κατανέμει την ύλη ακριβώς όπως ορίζει ο νόμος για τις εξετάσεις πολιτογράφησης Π.Ε.Γ.Π.
-        </p>
-      </div>
-
-      <div class="row g-4">
-        <!-- Module 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-primary text-white">Ενότητα 1</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">245 Ερωτήσεις</span>
-            </div>
-            <h3 class="h5 text-navy-custom">🏛️ Ελληνική Ιστορία</h3>
-            <p class="text-muted small mb-0">
-              Αρχαία Ελλάδα, Βυζαντινή περίοδος, Ελληνική Επανάσταση του 1821, Νεότερη & Σύγχρονη Ιστορία, Β' Παγκόσμιος
-              Πόλεμος και Μεταπολίτευση.
-            </p>
-          </div>
-        </div>
-
-        <!-- Module 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-primary text-white">Ενότητα 2</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">120 Ερωτήσεις</span>
-            </div>
-            <h3 class="h5 text-navy-custom">🗺️ Γεωγραφία της Ελλάδας</h3>
-            <p class="text-muted small mb-0">
-              Γεωγραφικά διαμερίσματα, νομοί και πρωτεύουσες, βουνά, ποτάμια, λίμνες, νησιά και βασικά χαρακτηριστικά
-              της ελληνικής επικράτειας με ερωτήσεις χαρτών.
-            </p>
-          </div>
-        </div>
-
-        <!-- Module 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-primary text-white">Ενότητα 3</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">140 Ερωτήσεις</span>
-            </div>
-            <h3 class="h5 text-navy-custom">🎭 Ελληνικός Πολιτισμός</h3>
-            <p class="text-muted small mb-0">
-              Τέχνες, παραδόσεις, λογοτεχνία, ήθη και έθιμα, μουσική παράδοση, μνημεία παγκόσμιας πολιτιστικής
-              κληρονομιάς UNESCO και σπουδαίοι δημιουργοί.
-            </p>
-          </div>
-        </div>
-
-        <!-- Module 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-navy-custom text-white">Ενότητα 4</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">180 Ερωτήσεις</span>
-            </div>
-            <h3 class="h5 text-navy-custom">⚖️ Πολιτικοί Θεσμοί & Σύνταγμα</h3>
-            <p class="text-muted small mb-0">
-              Το Πολίτευμα της Ελλάδας, θεμελιώδη ατομικά και κοινωνικά δικαιώματα, Βουλή των Ελλήνων, Κυβέρνηση,
-              Δικαστική εξουσία και Ευρωπαϊκή Ένωση.
-            </p>
-          </div>
-        </div>
-
-        <!-- Module 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-navy-custom text-white">Ενότητα 5</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">50 Ηχητικά Θέματα</span>
-            </div>
-            <h3 class="h5 text-navy-custom">🎧 Κατανόηση Προφορικού Λόγου</h3>
-            <p class="text-muted small mb-0">
-              Ακρόαση διαλόγων, ειδήσεων, ανακοινώσεων και συνεντεύξεων με αντίστοιχες ερωτήσεις κατανόησης και
-              επαλήθευσης απαντήσεων.
-            </p>
-          </div>
-        </div>
-
-        <!-- Module 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="topic-card h-100">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <span class="topic-badge bg-navy-custom text-white">Ενότητα 6</span>
-              <span class="badge bg-light text-navy-custom border fw-semibold">126 Θέματα & 51 Εικόνες</span>
-            </div>
-            <h3 class="h5 text-navy-custom">🗣️ Προφορικά & ✍️ Γραπτός Λόγος</h3>
-            <p class="text-muted small mb-0">
-              Πλήρης προσομοίωση προφορικής εξέτασης με τις 51 επίσημες έγχρωμες εικόνες (stimuli) και υπόδειγμα Β1,
-              καθώς και studio 100 γραπτών θεμάτων με ασκήσεις και έκθεση.
-            </p>
-          </div>
+          <a href="#foldables" class="btn-outline-navy btn-sm text-nowrap">
+            <span>Δείτε τη λειτουργία Foldable</span>
+            <i class="bi bi-arrow-down-short fs-5"></i>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Audio Streaming Spotlight Section -->
-  <section id="audio" class="py-5 bg-white">
-    <div class="container py-4">
-      <div class="audio-spotlight">
-        <div class="row align-items-center g-4">
+    <!-- Foldables & Tablets Showcase Section -->
+    <section id="foldables" class="py-5 foldable-showcase-section">
+      <div class="container py-4">
+        <div class="section-header text-center max-w-700 mx-auto mb-5">
+          <div class="foldable-badge-pill mb-3">
+            <i class="bi bi-phone-flip"></i>
+            <span>Next-Gen Display Architecture</span>
+          </div>
+          <h2 class="section-title mb-3">Έξυπνη Προσαρμογή σε Foldables &amp; Tablets</h2>
+          <p class="text-white-50 mt-2" style="font-size: 1.05rem; line-height: 1.6;">
+            Η εφαρμογή σχεδιάστηκε από την αρχή με adaptive responsive αρχιτεκτονική. Είτε διαβάζετε στο κινητό σας εν
+            κινήσει, είτε ξεδιπλώνετε τη συσκευή σας για μια εμπειρία μεγάλης οθόνης, η μελέτη προσαρμόζεται άμεσα στις
+            ανάγκες σας.
+          </p>
+        </div>
+
+        <!-- Devices Showcase Grid -->
+        <div class="row align-items-stretch g-4 mb-5">
+          <!-- Folded (Cover Screen / Smartphone) -->
+          <div class="col-lg-4">
+            <div class="device-card-wrapper text-center">
+              <span class="device-label-pill phone-mode">
+                <i class="bi bi-phone"></i> Κλειστό (Cover Screen) &bull; Phone Mode
+              </span>
+              <div class="phone-device-frame mb-3">
+                <img src="assets/Un-Fold.webp" alt="Ιθαγένεια Εφαρμογή σε Smartphone / Cover Screen" loading="lazy"
+                  width="600" height="700">
+              </div>
+              <h3 class="h5 fw-bold text-white mb-2">Συμπαγής &amp; Ευέλικτη Προβολή</h3>
+              <p class="text-white-50 small mb-0">
+                Καθαρή διάταξη μίας στήλης με κάτω μπάρα πλοήγησης και πτυσσόμενο ευρετήριο, ιδανική για γρήγορη
+                εξάσκηση
+                και επανάληψη με το ένα χέρι.
+              </p>
+            </div>
+          </div>
+
+          <!-- Unfolded (Inner Display / Tablet Dual-Pane) -->
           <div class="col-lg-8">
-            <span class="badge bg-primary text-white fw-bold mb-3 px-3 py-2" style="font-size: 0.8rem;">
-              <i class="bi bi-broadcast me-1"></i> DEDICATED HIGH-SPEED STREAMING
-            </span>
-            <h2 class="display-font text-white mb-3" style="font-size: 2.2rem;">
-              Άμεσο Audio Streaming για τις Προφορικές Εξετάσεις
-            </h2>
-            <p class="text-white-50 mb-4" style="font-size: 1.05rem; line-height: 1.6;">
-              Η πλατφόρμα μας φιλοξενεί και τα 50 ηχητικά αρχεία των εξετάσεων (MP3) σε διακομιστή υψηλής ταχύτητας με
-              υποστήριξη <strong>Byte-Range seeking</strong> και <strong>CORS</strong>. Αυτό επιτρέπει στην εφαρμογή
-              Android να παραμένει ελαφριά (κάτω από 4 MB) ενώ παρέχει αστραπιαία φόρτωση και ακρόαση οποιουδήποτε
-              θέματος.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <div class="d-flex align-items-center gap-2 text-white small">
-                <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
-                <span>Byte-Range Seeking υποστηριζόμενο</span>
+            <div class="device-card-wrapper">
+              <span class="device-label-pill fold-mode">
+                <i class="bi bi-tablet-landscape"></i> Ξεδιπλωμένο (Inner Display) &bull; Dual-Pane Tablet Mode
+              </span>
+              <div class="foldable-device-frame mb-3">
+                <img src="assets/Fold.webp" alt="Ιθαγένεια Εφαρμογή σε Foldable Inner Screen / Tablet Dual-Pane"
+                  loading="lazy" width="1200" height="700">
               </div>
-              <div class="d-flex align-items-center gap-2 text-white small">
-                <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
-                <span>Αυτόματη προσαρμογή ποιότητας</span>
-              </div>
-              <div class="d-flex align-items-center gap-2 text-white small">
-                <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
-                <span>Ενσωματωμένο στο Android App</span>
+              <div class="row g-3 text-start mt-2">
+                <div class="col-md-6">
+                  <h3 class="h5 fw-bold text-white mb-2">Πολυπαραθυρική Διάταξη (Dual-Pane)</h3>
+                  <p class="text-white-50 small mb-0">
+                    Το πλήρες ευρετήριο των 918+ ερωτήσεων προβάλλεται μόνιμα στα αριστερά, επιτρέποντας άμεσο άλμα σε
+                    οποιοδήποτε θέμα χωρίς έξοδο από την τρέχουσα ερώτηση.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="h5 fw-bold text-white mb-2">Εργονομική Πλευρική Μπάρα (Side Rail)</h3>
+                  <p class="text-white-50 small mb-0">
+                    Κάθετη μπάρα πλοήγησης για άμεση εναλλαγή μεταξύ Μελέτης, Test, Προφορικών και Αγαπημένων,
+                    βελτιστοποιημένη για εύκολο χειρισμό σε μεγάλες διαστάσεις.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Specs / Highlights Grid -->
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="foldable-spec-pill">
+              <div class="foldable-spec-icon">
+                <i class="bi bi-layout-split"></i>
+              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Adaptive Dual-Pane</h3>
+              <p class="text-white-50 small mb-0">
+                Αυτόματη επέκταση σε διπλό παράθυρο σε πλάτος άνω των 600dp, με άμεση αναγνώριση του fold/unfold state
+                της
+                συσκευής.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="foldable-spec-pill">
+              <div class="foldable-spec-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">
+                <i class="bi bi-arrows-angle-expand"></i>
+              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Seamless Continuity</h3>
+              <p class="text-white-50 small mb-0">
+                Ανοίξτε ή διπλώστε τη συσκευή σας ανά πάσα στιγμή χωρίς καμία απώλεια προόδου ή διακοπή της ενεργής σας
+                δοκιμασίας.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="foldable-spec-pill">
+              <div class="foldable-spec-icon" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">
+                <i class="bi bi-moon-stars"></i>
+              </div>
+              <h3 class="h6 text-white fw-bold mb-2">OLED Dark Mode</h3>
+              <p class="text-white-50 small mb-0">
+                Σκούρο θέμα υψηλής αντίθεσης, ειδικά προσαρμοσμένο για OLED οθόνες αναδιπλούμενων συσκευών με ελάχιστη
+                κατανάλωση.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="foldable-spec-pill">
+              <div class="foldable-spec-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
+                <i class="bi bi-compass"></i>
+              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Side Rail Navigation</h3>
+              <p class="text-white-50 small mb-0">
+                Πλευρική μπάρα πλοήγησης που διατηρεί όλες τις βασικές λειτουργίες σε απόσταση ενός αντίχειρα χωρίς
+                περιττά κλικ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam Syllabus Breakdown Section -->
+    <section id="syllabus" class="py-5 bg-subtle-custom border-top border-bottom">
+      <div class="container py-4">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="section-tag">Θεματικες Ενοτητες</span>
+          <h2 class="section-title">Κάλυψη Όλων των Εξεταστέων Γνωστικών Πεδίων</h2>
+          <p class="text-muted mt-2">
+            Η εφαρμογή κατανέμει την ύλη ακριβώς όπως ορίζει ο νόμος για τις εξετάσεις πολιτογράφησης Π.Ε.Γ.Π.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Module 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-primary text-white">Ενότητα 1</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">245 Ερωτήσεις</span>
+              </div>
+              <h3 class="h5 text-navy-custom">🏛️ Ελληνική Ιστορία</h3>
+              <p class="text-muted small mb-0">
+                Αρχαία Ελλάδα, Βυζαντινή περίοδος, Ελληνική Επανάσταση του 1821, Νεότερη & Σύγχρονη Ιστορία, Β'
+                Παγκόσμιος
+                Πόλεμος και Μεταπολίτευση.
+              </p>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-primary text-white">Ενότητα 2</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">120 Ερωτήσεις</span>
+              </div>
+              <h3 class="h5 text-navy-custom">🗺️ Γεωγραφία της Ελλάδας</h3>
+              <p class="text-muted small mb-0">
+                Γεωγραφικά διαμερίσματα, νομοί και πρωτεύουσες, βουνά, ποτάμια, λίμνες, νησιά και βασικά χαρακτηριστικά
+                της ελληνικής επικράτειας με ερωτήσεις χαρτών.
+              </p>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-primary text-white">Ενότητα 3</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">140 Ερωτήσεις</span>
+              </div>
+              <h3 class="h5 text-navy-custom">🎭 Ελληνικός Πολιτισμός</h3>
+              <p class="text-muted small mb-0">
+                Τέχνες, παραδόσεις, λογοτεχνία, ήθη και έθιμα, μουσική παράδοση, μνημεία παγκόσμιας πολιτιστικής
+                κληρονομιάς UNESCO και σπουδαίοι δημιουργοί.
+              </p>
+            </div>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-navy-custom text-white">Ενότητα 4</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">180 Ερωτήσεις</span>
+              </div>
+              <h3 class="h5 text-navy-custom">⚖️ Πολιτικοί Θεσμοί & Σύνταγμα</h3>
+              <p class="text-muted small mb-0">
+                Το Πολίτευμα της Ελλάδας, θεμελιώδη ατομικά και κοινωνικά δικαιώματα, Βουλή των Ελλήνων, Κυβέρνηση,
+                Δικαστική εξουσία και Ευρωπαϊκή Ένωση.
+              </p>
+            </div>
+          </div>
+
+          <!-- Module 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-navy-custom text-white">Ενότητα 5</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">50 Ηχητικά Θέματα</span>
+              </div>
+              <h3 class="h5 text-navy-custom">🎧 Κατανόηση Προφορικού Λόγου</h3>
+              <p class="text-muted small mb-0">
+                Ακρόαση διαλόγων, ειδήσεων, ανακοινώσεων και συνεντεύξεων με αντίστοιχες ερωτήσεις κατανόησης και
+                επαλήθευσης απαντήσεων.
+              </p>
+            </div>
+          </div>
+
+          <!-- Module 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="topic-card h-100">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="topic-badge bg-navy-custom text-white">Ενότητα 6</span>
+                <span class="badge bg-light text-navy-custom border fw-semibold">126 Θέματα & 51 Εικόνες</span>
+              </div>
+              <h3 class="h5 text-navy-custom">🗣️ Προφορικά & ✍️ Γραπτός Λόγος</h3>
+              <p class="text-muted small mb-0">
+                Πλήρης προσομοίωση προφορικής εξέτασης με τις 51 επίσημες έγχρωμες εικόνες (stimuli) και υπόδειγμα Β1,
+                καθώς και studio 100 γραπτών θεμάτων με ασκήσεις και έκθεση.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Streaming Spotlight Section -->
+    <section id="audio" class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="audio-spotlight">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="badge bg-primary text-white fw-bold mb-3 px-3 py-2" style="font-size: 0.8rem;">
+                <i class="bi bi-broadcast me-1"></i> DEDICATED HIGH-SPEED STREAMING
+              </span>
+              <h2 class="display-font text-white mb-3" style="font-size: 2.2rem;">
+                Άμεσο Audio Streaming για τις Προφορικές Εξετάσεις
+              </h2>
+              <p class="text-white-50 mb-4" style="font-size: 1.05rem; line-height: 1.6;">
+                Η πλατφόρμα μας φιλοξενεί και τα 50 ηχητικά αρχεία των εξετάσεων (MP3) σε διακομιστή υψηλής ταχύτητας με
+                υποστήριξη <strong>Byte-Range seeking</strong> και <strong>CORS</strong>. Αυτό επιτρέπει στην εφαρμογή
+                Android να παραμένει ελαφριά (κάτω από 4 MB) ενώ παρέχει αστραπιαία φόρτωση και ακρόαση οποιουδήποτε
+                θέματος.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <div class="d-flex align-items-center gap-2 text-white small">
+                  <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
+                  <span>Byte-Range Seeking υποστηριζόμενο</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 text-white small">
+                  <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
+                  <span>Αυτόματη προσαρμογή ποιότητας</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 text-white small">
+                  <i class="bi bi-check-circle-fill text-primary-custom fs-5"></i>
+                  <span>Ενσωματωμένο στο Android App</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="p-4 rounded-4 bg-white text-navy-custom shadow-lg">
+                <div class="display-3 text-primary-custom mb-2">
+                  <i class="bi bi-soundwave"></i>
+                </div>
+                <h3 class="h5 fw-bold mb-1">Thema_01 έως Thema_50</h3>
+                <p class="text-muted small mb-3">Πλήρης συλλογή ηχητικών εξετάσεων</p>
+                <audio controls preload="none" class="w-100" style="max-width: 260px;">
+                  <source src="audio/Thema_01.mp3" type="audio/mpeg">
+                  Ο browser σας δεν υποστηρίζει αναπαραγωγή ήχου.
+                </audio>
+                <small class="d-block text-muted mt-2" style="font-size: 0.72rem;">Δείγμα: Θέμα 1 (Streaming
+                  Demo)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-5 bg-subtle-custom border-top">
+      <div class="container py-4">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="section-tag">Εγκατασταση</span>
+          <h2 class="section-title">Αποκτήστε την Εφαρμογή για το Android Κινητό σας</h2>
+          <p class="text-muted mt-2">
+            Διαθέσιμη επίσημα στο <strong>Google Play Store</strong> με μόνο <strong>10,00 €</strong> (εφάπαξ αγορά,
+            χωρίς συνδρομές ή διαφημίσεις):
+          </p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+          <!-- Google Play Option -->
+          <div class="col-md-8 col-lg-6">
+            <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank"
+              rel="noopener noreferrer" class="download-channel-card p-4 h-100 shadow-sm">
+              <div class="download-channel-icon"
+                style="background: rgba(16, 185, 129, 0.12); color: #10b981; width: 56px; height: 56px; font-size: 1.8rem;">
+                <i class="bi bi-google-play"></i>
+              </div>
+              <div class="flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <h3 class="mb-0 text-navy-custom fw-bold fs-5">Google Play Store</h3>
+                  <span
+                    class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-1 fw-bold fs-6">10,00
+                    €</span>
+                </div>
+                <p class="text-muted small mb-0">Ασφαλής αυτόματη εγκατάσταση, εφάπαξ αγορά και όλες οι μελλοντικές
+                  ενημερώσεις δωρεάν.</p>
+              </div>
+              <div class="text-muted fs-4">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Feature Highlight Note -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <div
+              class="alert alert-light border rounded-4 d-flex align-items-center justify-content-center gap-3 p-3 shadow-sm text-center"
+              role="alert">
+              <i class="bi bi-shield-check text-success fs-4 flex-shrink-0"></i>
+              <div class="small text-muted mb-0">
+                <strong>100% Επίσημη Τράπεζα Θεμάτων:</strong> Πλήρης πρόσβαση σε 920+ ερωτήσεις, 50 ηχητικά θέματα και
+                απεριόριστες προσομοιώσεις εξετάσεων χωρίς διαφημίσεις.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creator / About Section -->
+    <section id="about" class="py-5 bg-white border-top">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
           <div class="col-lg-4 text-center">
-            <div class="p-4 rounded-4 bg-white text-navy-custom shadow-lg">
-              <div class="display-3 text-primary-custom mb-2">
-                <i class="bi bi-soundwave"></i>
-              </div>
-              <h3 class="h5 fw-bold mb-1">Thema_01 έως Thema_50</h3>
-              <p class="text-muted small mb-3">Πλήρης συλλογή ηχητικών εξετάσεων</p>
-              <audio controls preload="none" class="w-100" style="max-width: 260px;">
-                <source src="audio/Thema_01.mp3" type="audio/mpeg">
-                Ο browser σας δεν υποστηρίζει αναπαραγωγή ήχου.
-              </audio>
-              <small class="d-block text-muted mt-2" style="font-size: 0.72rem;">Δείγμα: Θέμα 1 (Streaming Demo)</small>
+            <div class="d-inline-block position-relative mb-3">
+              <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
+                class="about-logo-wrapper d-inline-flex align-items-center justify-content-center py-3 px-4 rounded-4 shadow-sm text-decoration-none"
+                title="Nima Rahbar">
+                <img src="assets/nimarahbar.webp" alt="Nima Rahbar" class="about-creator-logo img-fluid" width="180"
+                  height="60">
+              </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download" class="py-5 bg-subtle-custom border-top">
-    <div class="container py-4">
-      <div class="section-header text-center max-w-700 mx-auto">
-        <span class="section-tag">Εγκατασταση</span>
-        <h2 class="section-title">Αποκτήστε την Εφαρμογή για το Android Κινητό σας</h2>
-        <p class="text-muted mt-2">
-          Διαθέσιμη επίσημα στο <strong>Google Play Store</strong> με μόνο <strong>10,00 €</strong> (εφάπαξ αγορά, χωρίς συνδρομές ή διαφημίσεις):
-        </p>
-      </div>
-
-      <div class="row justify-content-center g-4">
-        <!-- Google Play Option -->
-        <div class="col-md-8 col-lg-6">
-          <a href="https://play.google.com/store/apps/details?id=com.nimarahbar.ithageneia" target="_blank"
-            rel="noopener noreferrer" class="download-channel-card p-4 h-100 shadow-sm">
-            <div class="download-channel-icon"
-              style="background: rgba(16, 185, 129, 0.12); color: #10b981; width: 56px; height: 56px; font-size: 1.8rem;">
-              <i class="bi bi-google-play"></i>
-            </div>
-            <div class="flex-grow-1">
-              <div class="d-flex align-items-center justify-content-between mb-1">
-                <h3 class="mb-0 text-navy-custom fw-bold fs-5">Google Play Store</h3>
-                <span
-                  class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-1 fw-bold fs-6">10,00
-                  €</span>
-              </div>
-              <p class="text-muted small mb-0">Ασφαλής αυτόματη εγκατάσταση, εφάπαξ αγορά και όλες οι μελλοντικές
-                ενημερώσεις δωρεάν.</p>
-            </div>
-            <div class="text-muted fs-4">
-              <i class="bi bi-chevron-right"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <!-- Feature Highlight Note -->
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-8">
-          <div class="alert alert-light border rounded-4 d-flex align-items-center justify-content-center gap-3 p-3 shadow-sm text-center"
-            role="alert">
-            <i class="bi bi-shield-check text-success fs-4 flex-shrink-0"></i>
-            <div class="small text-muted mb-0">
-              <strong>100% Επίσημη Τράπεζα Θεμάτων:</strong> Πλήρης πρόσβαση σε 920+ ερωτήσεις, 50 ηχητικά θέματα και
-              απεριόριστες προσομοιώσεις εξετάσεων χωρίς διαφημίσεις.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Creator / About Section -->
-  <section id="about" class="py-5 bg-white border-top">
-    <div class="container py-4">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-4 text-center">
-          <div class="d-inline-block position-relative mb-3">
+            <div class="h4 text-navy-custom fw-bold mb-1 fs-4">Nima Rahbar</div>
+            <p class="text-muted small mb-3">Senior Web Designer &amp; Developer</p>
             <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
-              class="about-logo-wrapper d-inline-flex align-items-center justify-content-center py-3 px-4 rounded-4 shadow-sm text-decoration-none"
-              title="Nima Rahbar">
-              <img src="assets/nimarahbar.webp" alt="Nima Rahbar" class="about-creator-logo img-fluid" width="180" height="60">
+              class="btn-outline-navy btn-sm text-decoration-none py-2 px-3">
+              <i class="bi bi-globe2"></i>
+              <span>nimarahbar.com</span>
             </a>
           </div>
-          <div class="h4 text-navy-custom fw-bold mb-1 fs-4">Nima Rahbar</div>
-          <p class="text-muted small mb-3">Senior Web Designer &amp; Developer</p>
-          <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
-            class="btn-outline-navy btn-sm text-decoration-none py-2 px-3">
-            <i class="bi bi-globe2"></i>
-            <span>nimarahbar.com</span>
-          </a>
-        </div>
 
-        <div class="col-lg-8">
-          <span class="section-tag">Σχετικα με το Εργο</span>
-          <h2 class="section-title mb-3">Ανάπτυξη Εφαρμογής & Σκοπός</h2>
-          <p class="text-muted" style="line-height: 1.7;">
-            Η εφαρμογή <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> δημιουργήθηκε με στόχο να προσφέρει σε κάθε υποψήφιο ένα
-            σύγχρονο, αξιόπιστο και προσιτό ψηφιακό εργαλείο (μόλις 10€ εφάπαξ) για την επιτυχή προετοιμασία του στις εξετάσεις
-            πολιτογράφησης στην Ελλάδα.
-          </p>
-          <p class="text-muted" style="line-height: 1.7;">
-            Συνδυάζοντας την πολυετή εμπειρία στην ανάπτυξη ιστοσελίδων και εφαρμογών, δημιουργήθηκε μια εξαιρετικά
-            γρήγορη και ελαφριά εφαρμογή, διασφαλίζοντας παράλληλα υψηλή ακρίβεια στην τράπεζα θεμάτων και κορυφαία
-            εμπειρία χρήστη.
-          </p>
+          <div class="col-lg-8">
+            <span class="section-tag">Σχετικα με το Εργο</span>
+            <h2 class="section-title mb-3">Ανάπτυξη Εφαρμογής & Σκοπός</h2>
+            <p class="text-muted" style="line-height: 1.7;">
+              Η εφαρμογή <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> δημιουργήθηκε με στόχο να προσφέρει σε κάθε υποψήφιο ένα
+              σύγχρονο, αξιόπιστο και προσιτό ψηφιακό εργαλείο (μόλις 10€ εφάπαξ) για την επιτυχή προετοιμασία του στις
+              εξετάσεις
+              πολιτογράφησης στην Ελλάδα.
+            </p>
+            <p class="text-muted" style="line-height: 1.7;">
+              Συνδυάζοντας την πολυετή εμπειρία στην ανάπτυξη ιστοσελίδων και εφαρμογών, δημιουργήθηκε μια εξαιρετικά
+              γρήγορη και ελαφριά εφαρμογή, διασφαλίζοντας παράλληλα υψηλή ακρίβεια στην τράπεζα θεμάτων και κορυφαία
+              εμπειρία χρήστη.
+            </p>
 
-          <div class="d-flex align-items-center gap-3 mt-4">
-            <span class="small fw-bold text-navy-custom">Συνδεθείτε:</span>
-            <a href="https://www.linkedin.com/in/nimarahbar/" target="_blank" rel="noopener noreferrer"
-              class="social-icon-btn" title="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://github.com/nima-rahbar" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
-              title="GitHub">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://nimarahbar.com/contact/" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
-              title="Επικοινωνία">
-              <i class="bi bi-envelope-fill"></i>
-            </a>
+            <div class="d-flex align-items-center gap-3 mt-4">
+              <span class="small fw-bold text-navy-custom">Συνδεθείτε:</span>
+              <a href="https://www.linkedin.com/in/nimarahbar/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/nima-rahbar" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://nimarahbar.com/contact/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="Επικοινωνία">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -800,8 +825,8 @@
 
   <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous" defer></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
 
   <!-- Light / Dark Mode Hero Slider Logic -->
   <script>
