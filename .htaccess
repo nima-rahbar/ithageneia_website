@@ -84,3 +84,9 @@
 
 # 8. UTF-8 Character Encoding
 AddDefaultCharset UTF-8
+
+# 9. MIME Types (Ensure proper application/xml content-type for Google Search Console)
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+    AddType image/webp .webp
+</IfModule>
