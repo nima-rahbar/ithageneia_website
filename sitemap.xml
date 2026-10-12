@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage & App Showcase Landing Page -->
+  <url>
+    <loc>https://ithageneia.nimarahbar.com/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ithageneia.nimarahbar.com/assets/main-light.webp</image:loc>
+      <image:title>Ιθαγένεια Π.Ε.Γ.Π. - Κύρια διεπαφή εφαρμογής Android</image:title>
+      <image:caption>Επίσημη εφαρμογή Android για τις εξετάσεις Ελληνικής Ιθαγένειας (Π.Ε.Γ.Π.)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ithageneia.nimarahbar.com/assets/desc_01.webp</image:loc>
+      <image:title>Ιθαγένεια Π.Ε.Γ.Π. - Προεπισκόπηση ερωτήσεων και μεταφράσεων</image:title>
+      <image:caption>920+ ερωτήσεις τράπεζας θεμάτων με πολύγλωσση υποστήριξη και ηχητική κατανόηση</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ithageneia.nimarahbar.com/assets/Fold.webp</image:loc>
+      <image:title>Υποστήριξη Foldable συσκευών</image:title>
+      <image:caption>Προσαρμοστική διάταξη dual-pane για αναδιπλούμενες συσκευές Android</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ithageneia.nimarahbar.com/assets/Un-Fold.webp</image:loc>
+      <image:title>Υποστήριξη Tablets και μεγάλων οθονών</image:title>
+      <image:caption>Βελτιστοποιημένη εμπειρία μελέτης σε tablet και οθόνες υψηλής ανάλυσης</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ithageneia.nimarahbar.com/assets/Feature-graphic.jpg</image:loc>
+      <image:title>Google Play Store Feature Graphic</image:title>
+      <image:caption>Πλήρης προετοιμασία για το Πιστοποιητικό Επάρκειας Γνώσεων για Πολιτογράφηση</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Official Privacy Policy (Google Play & GDPR Compliant) -->
+  <url>
+    <loc>https://ithageneia.nimarahbar.com/privacy_policy.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

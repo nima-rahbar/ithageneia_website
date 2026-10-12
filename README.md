@@ -41,6 +41,7 @@ website_bundle/
 ├── .htaccess               # Apache διαμόρφωση για CORS, Byte-Ranges & Caching
 ├── nginx.conf              # Nginx διαμόρφωση (εναλλακτική για VPS / LEMP)
 ├── robots.txt              # Ρυθμίσεις ευρετηρίασης μηχανών αναζήτησης
+├── sitemap.xml             # XML Sitemap για Google Search Console
 ├── LICENSE                 # Άδεια χρήσης MIT
 ├── assets/                 # Εικόνες, λογότυπα και γραφικά mockups
 │   ├── favicon.png         # Επίσημο favicon

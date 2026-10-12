@@ -16,10 +16,12 @@ The `c:\Projects\ithageneia\website_bundle\` directory contains the showcase web
 ```text
 website_bundle/
 ├── index.html                  # Official introduction & showcase landing page (Bootstrap 5)
+├── privacy_policy.html         # Official Privacy Policy (Google Play & GDPR compliant)
 ├── style.css                   # Theme stylesheet with nimarahbar.com color scheme
-├── .htaccess                   # Pre-configured Apache CORS & Byte-Range streaming headers
+├── .htaccess                   # Pre-configured Apache 301 redirects, CORS & Byte-Range streaming
 ├── nginx.conf                  # Nginx equivalent config snippet (if using Nginx)
-├── robots.txt                  # Search engine crawler permissions
+├── robots.txt                  # Search engine crawler permissions & sitemap link
+├── sitemap.xml                 # Search engine XML sitemap (Google Search Console)
 ├── assets/
 │   └── maps/                   # Visual map assets
 ├── audio/                      # 50 Listening Comprehension MP3 tracks (~240 MB)

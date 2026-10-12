@@ -11,12 +11,28 @@
     Header set Access-Control-Expose-Headers "Content-Range, Content-Length, Accept-Ranges"
 </IfModule>
 
-# 2. Hotlink & Direct Browser Protection for Audio Files (.mp3)
-# Blocks direct URL bar navigation, downloads, and external hotlinking.
+# 2. Legacy WordPress Redirections (Clean up Search Console 404 Errors)
+# Redirects legacy WordPress theme assets, admin paths, and core files to homepage (HTTP 301 Moved Permanently)
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
+    # 2a. Legacy theme assets: /wp-content/themes/nima-studio/*
+    RewriteRule ^wp-content/themes/nima-studio(/.*)?$ / [R=301,L]
+
+    # 2b. Legacy WordPress admin: /wp-admin/*
+    RewriteRule ^wp-admin(/.*)?$ / [R=301,L]
+
+    # 2c. Additional legacy WordPress paths (content, plugins, includes, login)
+    RewriteRule ^wp-content(/.*)?$ / [R=301,L]
+    RewriteRule ^wp-includes(/.*)?$ / [R=301,L]
+    RewriteRule ^wp-login\.php$ / [R=301,L]
+    RewriteRule ^xmlrpc\.php$ / [R=301,L]
+
+    # --------------------------------------------------------------------------
+    # 3. Hotlink & Direct Browser Protection for Audio Files (.mp3)
+    # Blocks direct URL bar navigation, downloads, and external hotlinking.
+    # --------------------------------------------------------------------------
     # Allow if referer matches authorized app environments or your domain
     RewriteCond %{HTTP_REFERER} ^https?://appassets\.androidplatform\.net [NC,OR]
     RewriteCond %{HTTP_REFERER} ^https?://([a-zA-Z0-9-]+\.)?nimarahbar\.com [NC,OR]
@@ -27,7 +43,7 @@
     RewriteRule \.(mp3|ogg|m4a|wav)$ - [F,NC,L]
 </IfModule>
 
-# 3. Fallback Apache FilesMatch Protection (Works even if mod_rewrite is disabled)
+# 4. Fallback Apache FilesMatch Protection (Works even if mod_rewrite is disabled)
 <FilesMatch "\.(mp3|ogg|m4a|wav)$">
     <IfModule mod_authz_core.c>
         # Require valid referer
@@ -38,7 +54,7 @@
     </IfModule>
 </FilesMatch>
 
-# 4. Byte-Range Streaming & Caching for Audio Files (.mp3)
+# 5. Byte-Range Streaming & Caching for Audio Files (.mp3)
 <IfModule mod_headers.c>
     <FilesMatch "\.(mp3|ogg|m4a|wav)$">
         Header set Accept-Ranges "bytes"
@@ -46,7 +62,7 @@
     </FilesMatch>
 </IfModule>
 
-# 5. Browser Caching for Fast Loading
+# 6. Browser Caching for Fast Loading
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 2 days"
@@ -54,15 +70,17 @@
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType application/json "access plus 1 month"
+    ExpiresByType application/xml "access plus 1 day"
+    ExpiresByType text/xml "access plus 1 day"
     ExpiresByType image/png "access plus 1 month"
     ExpiresByType image/svg+xml "access plus 1 month"
     ExpiresByType audio/mpeg "access plus 1 year"
 </IfModule>
 
-# 6. Gzip Compression for Fast Page Loads
+# 7. Gzip Compression for Fast Page Loads
 <IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css application/javascript application/json
 </IfModule>
 
-# 7. UTF-8 Character Encoding
+# 8. UTF-8 Character Encoding
 AddDefaultCharset UTF-8
