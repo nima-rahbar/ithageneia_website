@@ -43,8 +43,8 @@
 
 ```text
 website_bundle/
-├── index.html              # Η κύρια responsive σελίδα υποδοχής & παρουσίασης
-├── privacy_policy.html     # Επίσημη Πολιτική Απορρήτου (Google Play & GDPR compliant)
+├── index.php               # Η κύρια responsive σελίδα υποδοχής & παρουσίασης (PHP dynamic headers)
+├── privacy_policy.php      # Επίσημη Πολιτική Απορρήτου (Google Play & GDPR compliant)
 ├── style.css               # Προσαρμοσμένο CSS, χρωματική παλέτα & animations
 ├── .htaccess               # Apache διαμόρφωση για CORS, Byte-Ranges & Caching
 ├── nginx.conf              # Nginx διαμόρφωση (εναλλακτική για VPS / LEMP)

@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Pragma: no-cache");
+header("Expires: 0");
+?>
 <!DOCTYPE html>
 <html lang="el">
 
@@ -1401,7 +1406,7 @@
           <p class="mb-0 small text-muted">
             Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="#syllabus" class="text-decoration-none text-muted">Ύλη
               Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Google Play</a> &bull; <a
-              href="privacy_policy.html" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική
+              href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική
               Απορρήτου</a>
           </p>
         </div>

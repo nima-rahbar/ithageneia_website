@@ -15,8 +15,8 @@ The `c:\Projects\ithageneia\website_bundle\` directory contains the showcase web
 
 ```text
 website_bundle/
-├── index.html                  # Official introduction & showcase landing page (Bootstrap 5)
-├── privacy_policy.html         # Official Privacy Policy (Google Play & GDPR compliant)
+├── index.php                   # Official introduction & showcase landing page (PHP anti-cache headers)
+├── privacy_policy.php          # Official Privacy Policy (Google Play & GDPR compliant)
 ├── style.css                   # Theme stylesheet with nimarahbar.com color scheme
 ├── .htaccess                   # Pre-configured Apache 301 redirects, CORS & Byte-Range streaming
 ├── nginx.conf                  # Nginx equivalent config snippet (if using Nginx)
@@ -44,7 +44,7 @@ website_bundle/
 3. Navigate to **File Manager** -> go to the document root directory for `ithageneia.nimarahbar.com` (often `public_html/ithageneia` or `subdomains/ithageneia`).
 4. Click **Upload** and upload `website_bundle.zip`.
 5. Select the uploaded ZIP file and click **Extract**.
-6. Ensure that `index.html` and `.htaccess` are directly inside the root folder of the subdomain.
+6. Ensure that `index.php`, `privacy_policy.php`, and `.htaccess` are directly inside the root folder of the subdomain (delete any old `index.html` or `privacy_policy.html`).
 
 ---
 

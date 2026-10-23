@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Pragma: no-cache");
+header("Expires: 0");
+?>
 <!DOCTYPE html>
 <html lang="el">
 
@@ -9,7 +14,7 @@
     content="Επίσημη Πολιτική Απορρήτου και Προστασίας Προσωπικών Δεδομένων για την εφαρμογή Android Ιθαγένεια Π.Ε.Γ.Π. (Greek Citizenship & Naturalization Test Prep).">
 
   <!-- Canonical URL & Sitemap -->
-  <link rel="canonical" href="https://ithageneia.nimarahbar.com/privacy_policy.html">
+  <link rel="canonical" href="https://ithageneia.nimarahbar.com/privacy_policy.php">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
   <!-- Favicons & App Icons -->
@@ -35,7 +40,7 @@
   <meta property="og:description"
     content="Πολιτική Απορρήτου και διαχείρισης δεδομένων για την εφαρμογή Ιθαγένεια Π.Ε.Γ.Π. στο Google Play. Μηδενική συλλογή προσωπικών δεδομένων, 100% τοπική αποθήκευση.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://ithageneia.nimarahbar.com/privacy_policy.html">
+  <meta property="og:url" content="https://ithageneia.nimarahbar.com/privacy_policy.php">
   <meta property="og:image" content="https://ithageneia.nimarahbar.com/assets/logo.webp">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
@@ -63,7 +68,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2 py-1" href="index.html">
+      <a class="navbar-brand d-flex align-items-center gap-2 py-1" href="index.php">
         <div class="navbar-brand-logo">
           <img class="img-responsive" src="assets/logo.webp" alt="Ιθαγένεια Π.Ε.Γ.Π." width="42" height="42">
         </div>
@@ -81,24 +86,24 @@
       <div class="collapse navbar-collapse" id="navbarPrivacy">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="bi bi-house-door me-1"></i> Αρχική
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#features">Δυνατότητες</a>
+            <a class="nav-link" href="index.php#features">Δυνατότητες</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#whats-new">Τι Νέο (v1.0.2)</a>
+            <a class="nav-link" href="index.php#whats-new">Τι Νέο (v1.0.2)</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#syllabus">Ύλη Εξετάσεων</a>
+            <a class="nav-link" href="index.php#syllabus">Ύλη Εξετάσεων</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#about">Σχετικά</a>
+            <a class="nav-link" href="index.php#about">Σχετικά</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-primary-custom" aria-current="page" href="privacy_policy.html">
+            <a class="nav-link active text-primary-custom" aria-current="page" href="privacy_policy.php">
               <i class="bi bi-shield-check me-1"></i> Πολιτική Απορρήτου
             </a>
           </li>
@@ -120,7 +125,7 @@
     <div class="container">
       <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb mb-0 small">
-          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted"><i class="bi bi-house me-1"></i>Αρχική</a></li>
+          <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none text-muted"><i class="bi bi-house me-1"></i>Αρχική</a></li>
           <li class="breadcrumb-item active text-navy-custom fw-semibold" aria-current="page">Πολιτική Απορρήτου (Privacy Policy)</li>
         </ol>
       </nav>
@@ -497,7 +502,7 @@
                 We may periodically update this Privacy Policy to reflect future application features, improvements, or regulatory requirements from Google Play and international data protection authorities.
               </p>
               <p>
-                Any revisions will be published directly on this permanent URL (<a href="https://ithageneia.nimarahbar.com/privacy_policy.html" class="text-primary-custom fw-semibold">https://ithageneia.nimarahbar.com/privacy_policy.html</a>) with an updated "Last Updated" timestamp. We encourage you to review this page periodically.
+                Any revisions will be published directly on this permanent URL (<a href="https://ithageneia.nimarahbar.com/privacy_policy.php" class="text-primary-custom fw-semibold">https://ithageneia.nimarahbar.com/privacy_policy.php</a>) with an updated "Last Updated" timestamp. We encourage you to review this page periodically.
               </p>
             </section>
 
@@ -559,8 +564,8 @@
         </div>
         <div class="col-md-6 text-center text-md-end">
           <p class="mb-0 small text-muted">
-            Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="index.html#syllabus" class="text-decoration-none text-muted">Ύλη
-              Εξετάσεων</a> &bull; <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.html" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a>
+            Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="index.php#syllabus" class="text-decoration-none text-muted">Ύλη
+              Εξετάσεων</a> &bull; <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a>
           </p>
         </div>
       </div>

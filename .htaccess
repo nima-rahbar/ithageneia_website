@@ -11,19 +11,25 @@
     Header set Access-Control-Expose-Headers "Content-Range, Content-Length, Accept-Ranges"
 </IfModule>
 
-# 2. Legacy WordPress Redirections (Clean up Search Console 404 Errors)
-# Redirects legacy WordPress theme assets, admin paths, and core files to homepage (HTTP 301 Moved Permanently)
+DirectoryIndex index.php index.html
+
+# 2. Legacy WordPress & HTML Redirections
+# Redirects legacy WordPress theme assets, admin paths, core files, and legacy .html URLs (HTTP 301)
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # 2a. Legacy theme assets: /wp-content/themes/nima-studio/*
+    # 2a. Redirect legacy .html endpoints to active .php files
+    RewriteRule ^index\.html$ / [R=301,L]
+    RewriteRule ^privacy_policy\.html$ /privacy_policy.php [R=301,L]
+
+    # 2b. Legacy theme assets: /wp-content/themes/nima-studio/*
     RewriteRule ^wp-content/themes/nima-studio(/.*)?$ / [R=301,L]
 
-    # 2b. Legacy WordPress admin: /wp-admin/*
+    # 2c. Legacy WordPress admin: /wp-admin/*
     RewriteRule ^wp-admin(/.*)?$ / [R=301,L]
 
-    # 2c. Additional legacy WordPress paths (content, plugins, includes, login)
+    # 2d. Additional legacy WordPress paths (content, plugins, includes, login)
     RewriteRule ^wp-content(/.*)?$ / [R=301,L]
     RewriteRule ^wp-includes(/.*)?$ / [R=301,L]
     RewriteRule ^wp-login\.php$ / [R=301,L]
@@ -63,8 +69,8 @@
 </IfModule>
 
 # 6. Browser Caching for Fast Loading
-# HTML files are configured with no-cache so updates propagate immediately through reverse proxies and CDNs
-<FilesMatch "\.(html|htm)$">
+# Dynamic PHP and HTML files are configured with no-cache so updates propagate immediately through reverse proxies and CDNs
+<FilesMatch "\.(php|html|htm)$">
     <IfModule mod_headers.c>
         Header set Cache-Control "no-cache, no-store, must-revalidate"
         Header set Pragma "no-cache"
