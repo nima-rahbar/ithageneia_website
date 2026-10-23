@@ -1205,6 +1205,222 @@ h6,
   border-bottom: none;
 }
 
+/* ==========================================================================
+   What's New in Version 1.0.2 & Release Highlights
+   ========================================================================== */
+.whats-new-section {
+  background-color: var(--nr-bg-body);
+  position: relative;
+}
+
+.release-banner-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 155, 223, 0.1);
+  color: var(--nr-primary);
+  border: 1px solid rgba(0, 155, 223, 0.3);
+  padding: 0.35rem 1rem;
+  border-radius: 50rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.release-feature-card {
+  background: var(--nr-bg-surface);
+  border: 1px solid var(--nr-border);
+  border-radius: var(--nr-radius);
+  padding: 1.75rem;
+  box-shadow: var(--nr-shadow-sm);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.release-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--nr-shadow-md);
+  border-color: rgba(0, 155, 223, 0.35);
+}
+
+.release-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 50rem;
+  width: fit-content;
+  margin-bottom: 0.85rem;
+}
+
+.release-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Interactive Sorting Demo Preview */
+.mock-sorting-preview {
+  background: var(--nr-bg-subtle);
+  border: 1px dashed var(--nr-border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  margin-top: 1rem;
+}
+
+.mock-sort-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.mock-sort-col {
+  background: #ffffff;
+  border: 1px solid rgba(36, 54, 115, 0.12);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.mock-sort-header {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--nr-navy);
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.25rem;
+}
+
+.mock-chip-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 50rem;
+  background: rgba(0, 155, 223, 0.08);
+  color: var(--nr-navy);
+  border: 1px solid rgba(0, 155, 223, 0.2);
+  margin: 0.15rem 0;
+  width: 100%;
+}
+
+.mock-chip-tag.correct {
+  background: rgba(16, 185, 129, 0.1);
+  color: #065f46;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Interactive Matching Demo Preview */
+.mock-matching-preview {
+  background: var(--nr-bg-subtle);
+  border: 1px dashed var(--nr-border);
+  border-radius: 12px;
+  padding: 0.85rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.mock-match-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(36, 54, 115, 0.12);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.72rem;
+}
+
+.mock-match-target {
+  font-weight: 600;
+  color: var(--nr-navy);
+}
+
+.mock-match-paired {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(16, 185, 129, 0.12);
+  color: #065f46;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* Changelog Accordion Styling */
+.changelog-accordion .accordion-item {
+  background: #ffffff;
+  border: 1px solid var(--nr-border);
+  border-radius: 12px !important;
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+  box-shadow: var(--nr-shadow-sm);
+}
+
+.changelog-accordion .accordion-button {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--nr-navy);
+  background: #ffffff;
+  padding: 1.15rem 1.35rem;
+  font-size: 1.05rem;
+}
+
+.changelog-accordion .accordion-button:not(.collapsed) {
+  background: rgba(0, 155, 223, 0.05);
+  color: var(--nr-primary);
+  box-shadow: inset 0 -1px 0 var(--nr-border);
+}
+
+.changelog-accordion .accordion-body {
+  padding: 1.35rem;
+  font-size: 0.92rem;
+  color: var(--nr-text-dark);
+}
+
+.changelog-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.changelog-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.changelog-list li:last-child {
+  margin-bottom: 0;
+}
+
+.changelog-list li::before {
+  content: "•";
+  color: var(--nr-primary);
+  font-weight: bold;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 0.35rem;
+  top: -0.1rem;
+}
+
 @media print {
   .navbar-custom,
   .footer-section,

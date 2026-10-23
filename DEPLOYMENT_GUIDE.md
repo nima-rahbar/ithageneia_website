@@ -140,6 +140,6 @@ function resolveAudioUrl(path) {
 ```
 
 ### Key Advantages for Your Android App:
-1. **Tiny APK Size**: You do NOT need to include the 240 MB `audio/` folder inside the Android APK. The APK will be only **~3 MB**, saving bandwidth and ensuring instant downloads on Google Play.
+1. **Tiny APK Size**: You do NOT need to include the 240 MB `audio/` folder inside the Android APK. The APK will be only **~17 MB**, saving bandwidth and ensuring instant downloads on Google Play.
 2. **Zero CORS Issues**: Because your `.htaccess` / `nginx.conf` includes `Access-Control-Allow-Origin: *` and `Accept-Ranges: bytes`, the Android WebView will stream and scrub audio with zero restrictions.
 3. **Automatic Fallback**: If an audio file is missing locally, the player automatically falls back to `https://ithageneia.nimarahbar.com/audio/Thema_XX.mp3`.
