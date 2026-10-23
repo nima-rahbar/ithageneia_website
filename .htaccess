@@ -63,10 +63,19 @@
 </IfModule>
 
 # 6. Browser Caching for Fast Loading
+# HTML files are configured with no-cache so updates propagate immediately through reverse proxies and CDNs
+<FilesMatch "\.(html|htm)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </IfModule>
+</FilesMatch>
+
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 2 days"
-    ExpiresByType text/html "access plus 1 hour"
+    ExpiresByType text/html "access plus 0 seconds"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType application/json "access plus 1 month"
