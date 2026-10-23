@@ -100,15 +100,14 @@
 
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-    <div class="container py-1">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 py-1" href="https://ithageneia.nimarahbar.com">
         <div class="navbar-brand-logo">
-          <img class="img-responsive" src="assets/logo.webp" alt="Ιθαγένεια Π.Ε.Γ.Π. - Επίσημη Εφαρμογή Android"
-            width="70" height="70">
+          <img class="img-responsive" src="assets/logo.webp" alt="Ιθαγένεια Π.Ε.Γ.Π." width="42" height="42">
         </div>
         <div>
           <span class="fw-bold fs-5 text-navy-custom d-block lh-1">Ιθαγένεια</span>
-          <small class="text-muted" style="font-size: 0.72rem; letter-spacing: 0.04em;">ΕΦΑΡΜΟΓΗ Π.Ε.Γ.Π. &bull; v1.0.2</small>
+          <small class="text-muted" style="font-size: 0.7rem; letter-spacing: 0.04em;">ΕΦΑΡΜΟΓΗ Π.Ε.Γ.Π.</small>
         </div>
       </a>
 
@@ -118,23 +117,61 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Δυνατότητες</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#whats-new">
-              Τι Νέο Υπάρχει <span class="badge bg-primary text-white rounded-pill px-2 py-0" style="font-size: 0.65rem;">v1.0.2</span>
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Dropdown: Δυνατότητες -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Δυνατότητες
             </a>
+            <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="featuresDropdown">
+              <li>
+                <a class="nav-dropdown-item" href="#features">
+                  <div class="nav-dropdown-icon" style="background: rgba(0, 155, 223, 0.12); color: var(--nr-primary);">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                  <div>
+                    <span class="nav-dropdown-title">Όλες οι Δυνατότητες</span>
+                    <small class="nav-dropdown-desc">920+ Ερωτήσεις, Test, Offline</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-dropdown-item" href="#translations">
+                  <div class="nav-dropdown-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
+                    <i class="bi bi-translate"></i>
+                  </div>
+                  <div>
+                    <span class="nav-dropdown-title">4 Γλώσσες Μετάφρασης</span>
+                    <small class="nav-dropdown-desc">English, فارسی, العربية, Türkçe</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-dropdown-item" href="#foldables">
+                  <div class="nav-dropdown-icon" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">
+                    <i class="bi bi-phone-flip"></i>
+                  </div>
+                  <div>
+                    <span class="nav-dropdown-title">Foldables &amp; Tablets</span>
+                    <small class="nav-dropdown-desc">Adaptive Dual-Pane Layout</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-dropdown-item" href="#whats-new">
+                  <div class="nav-dropdown-icon" style="background: rgba(139, 92, 246, 0.12); color: #8b5cf6;">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                  </div>
+                  <div>
+                    <span class="nav-dropdown-title">Διαδραστικοί Πίνακες</span>
+                    <small class="nav-dropdown-desc">Νέο: Ταξινόμηση &amp; Αντιστοίχιση</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#translations">
-              Μεταφράσεις <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-1" style="font-size: 0.65rem;">4 Γλώσσες</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#foldables">Foldables</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#syllabus">Εξεταστέα Ύλη</a>
           </li>
@@ -142,14 +179,20 @@
             <a class="nav-link" href="#audio">Audio Streaming</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#whats-new">
+              <span>Τι Νέο</span>
+              <span class="nav-version-badge">v1.0.2</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#about">Σχετικά</a>
           </li>
         </ul>
 
         <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-          <a href="#download" class="btn-primary-custom text-decoration-none">
-            <i class="bi bi-google-play fs-5"></i>
-            <span>Google Play</span>
+          <a href="#download" class="btn-nav-cta text-decoration-none">
+            <i class="bi bi-google-play"></i>
+            <span>Google Play (12€)</span>
           </a>
         </div>
       </div>
@@ -164,26 +207,13 @@
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-7">
-            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-              <a href="#whats-new" class="hero-badge mb-0 text-decoration-none"
-                style="background: rgba(36, 54, 115, 0.1); border-color: rgba(36, 54, 115, 0.3); color: var(--nr-navy);">
-                <i class="bi bi-patch-check-fill text-primary-custom"></i>
-                <span>Έκδοση 1.0.2 &bull; Νέες Δυνατότητες</span>
+            <!-- Single Clean Announcement Pill (Apple / Stripe style) -->
+            <div class="mb-3">
+              <a href="#whats-new" class="hero-announcement-pill text-decoration-none">
+                <span class="announcement-tag"><i class="bi bi-stars"></i> ΝΕΟ v1.0.2</span>
+                <span class="announcement-text">Διαδραστικοί Πίνακες, 4 Γλώσσες &amp; System Theme</span>
+                <i class="bi bi-chevron-right announcement-arrow"></i>
               </a>
-              <div class="hero-badge mb-0">
-                <i class="bi bi-shield-check text-primary-custom"></i>
-                <span>Επίσημη Τράπεζα Θεμάτων Π.Ε.Γ.Π.</span>
-              </div>
-              <div class="hero-badge mb-0"
-                style="background: rgba(0, 155, 223, 0.12); border-color: rgba(0, 155, 223, 0.35); color: var(--nr-navy);">
-                <i class="bi bi-phone-flip text-primary-custom"></i>
-                <span>Foldable &amp; Tablet Ready</span>
-              </div>
-              <div class="hero-badge mb-0"
-                style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.35); color: #065f46;">
-                <i class="bi bi-translate text-success"></i>
-                <span>4 Γλώσσες Μετάφρασης</span>
-              </div>
             </div>
 
             <h1 class="hero-title mb-3">
@@ -192,7 +222,8 @@
 
             <p class="hero-subtitle mb-4">
               Η ολοκληρωμένη εφαρμογή Android για την απόκτηση του <strong>Πιστοποιητικού Επάρκειας Γνώσεων για
-                Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. Πλήρης κάλυψη 920+ ερωτήσεων με <strong>διαδραστικούς πίνακες ταξινόμησης &amp; αντιστοίχισης</strong>, <strong>μεταφράσεις σε 4 γλώσσες (English, فارسی, العربية, Türkçe)</strong>, αυτόματη προσαρμογή <strong>System Theme</strong>, συνεχή ηχητική ροή και λειτουργία εκτός σύνδεσης.
+                Πολιτογράφηση (Π.Ε.Γ.Π.)</strong>. 920+ ερωτήσεις με διαδραστικούς πίνακες, μεταφράσεις σε 4 γλώσσες,
+              αυτόματο System Theme, συνεχή ηχητική ροή και λειτουργία εκτός σύνδεσης.
             </p>
 
             <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
@@ -201,9 +232,9 @@
                 <i class="bi bi-google-play"></i>
                 <span>Google Play Store</span>
               </a>
-              <a href="#whats-new" class="btn-outline-navy text-decoration-none">
-                <i class="bi bi-stars"></i>
-                <span>Τι Νέο Υπάρχει (v1.0.2)</span>
+              <a href="#features" class="btn-outline-navy text-decoration-none">
+                <i class="bi bi-compass"></i>
+                <span>Εξερεύνηση Δυνατοτήτων</span>
               </a>
             </div>
 
@@ -216,7 +247,8 @@
                 </div>
               </div>
               <div class="col-6 col-md">
-                <div class="border rounded-3 p-2 bg-white text-center shadow-sm h-100" style="border-color: rgba(16, 185, 129, 0.4) !important; background: rgba(16, 185, 129, 0.04) !important;">
+                <div class="border rounded-3 p-2 bg-white text-center shadow-sm h-100"
+                  style="border-color: rgba(16, 185, 129, 0.4) !important; background: rgba(16, 185, 129, 0.04) !important;">
                   <div class="fw-bold fs-4 text-success lh-1">4 Γλώσσες</div>
                   <small class="text-muted" style="font-size: 0.75rem;">Μεταφράσεις</small>
                 </div>
@@ -253,7 +285,8 @@
                 <button type="button" class="theme-switch-btn" id="themeBtnDark">
                   <i class="bi bi-moon-stars-fill text-primary"></i> <span>Σκούρο</span>
                 </button>
-                <button type="button" class="theme-switch-btn" id="themeBtnSystem" title="Προσαρμογή στις ρυθμίσεις του λειτουργικού συστήματος">
+                <button type="button" class="theme-switch-btn" id="themeBtnSystem"
+                  title="Προσαρμογή στις ρυθμίσεις του λειτουργικού συστήματος">
                   <i class="bi bi-circle-half text-info"></i> <span>Σύστημα</span>
                 </button>
               </div>
@@ -348,7 +381,9 @@
               </div>
               <h3 class="h5 text-navy-custom mb-2">50 Ηχητικά Θέματα (Streaming)</h3>
               <p class="text-muted small mb-0">
-                Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα των επίσημων εξετάσεων, με δυνατότητα άμεσης και <strong>συνεχούς αναπαραγωγής</strong> χωρίς επανεκκίνηση κατά την πλοήγηση στις ερωτήσεις.
+                Εξασκηθείτε στην κατανόηση προφορικού λόγου (Listening Comprehension) με όλα τα 50 ηχητικά αποσπάσματα
+                των επίσημων εξετάσεων, με δυνατότητα άμεσης και <strong>συνεχούς αναπαραγωγής</strong> χωρίς
+                επανεκκίνηση κατά την πλοήγηση στις ερωτήσεις.
               </p>
             </div>
           </div>
@@ -405,7 +440,8 @@
               </div>
               <h3 class="h5 text-navy-custom mb-2">Εξαιρετικά Ελαφριά &amp; Ταχύτατη</h3>
               <p class="text-muted small mb-0">
-                Μέγεθος αρχείου μόλις <strong>~17 MB</strong>! Άμεση εκκίνηση, προηγμένο LruCache εικόνων, μηδενική κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
+                Μέγεθος αρχείου μόλις <strong>~17 MB</strong>! Άμεση εκκίνηση, προηγμένο LruCache εικόνων, μηδενική
+                κατανάλωση μπαταρίας και άψογη εμπειρία χρήσης σε κάθε συσκευή Android (έκδοση 7.0 ή νεότερη).
               </p>
             </div>
           </div>
@@ -418,10 +454,12 @@
               </div>
               <div class="d-flex align-items-center gap-2 mb-2">
                 <h3 class="h5 text-navy-custom mb-0">Μεταφράσεις σε 4 Γλώσσες</h3>
-                <span class="badge bg-success text-white rounded-pill px-2 py-0" style="font-size: 0.65rem;">4 Γλώσσες</span>
+                <span class="badge bg-success text-white rounded-pill px-2 py-0" style="font-size: 0.65rem;">4
+                  Γλώσσες</span>
               </div>
               <p class="text-muted small mb-0">
-                Πλήρης κατανόηση ερωτήσεων και απαντήσεων σε <strong>English</strong>, <strong>فارسی (Persian)</strong>, <strong>العربية (Arabic)</strong> και <strong>Türkçe</strong>, με άμεση εναλλαγή και υποστήριξη RTL.
+                Πλήρης κατανόηση ερωτήσεων και απαντήσεων σε <strong>English</strong>, <strong>فارسی (Persian)</strong>,
+                <strong>العربية (Arabic)</strong> και <strong>Türkçe</strong>, με άμεση εναλλαγή και υποστήριξη RTL.
               </p>
             </div>
           </div>
@@ -434,10 +472,12 @@
               </div>
               <div class="d-flex align-items-center gap-2 mb-2">
                 <h3 class="h5 text-navy-custom mb-0">Διαδραστικοί Πίνακες</h3>
-                <span class="badge bg-primary text-white rounded-pill px-2 py-0" style="font-size: 0.65rem;">v1.0.2</span>
+                <span class="badge bg-primary text-white rounded-pill px-2 py-0"
+                  style="font-size: 0.65rem;">v1.0.2</span>
               </div>
               <p class="text-muted small mb-0">
-                Πλήρης υποστήριξη ερωτήσεων ταξινόμησης σε στήλες (sorting) και αντιστοίχισης δύο στηλών (matching) με διαδραστικά chips, tap-to-place και άμεση επαλήθευση.
+                Πλήρης υποστήριξη ερωτήσεων ταξινόμησης σε στήλες (sorting) και αντιστοίχισης δύο στηλών (matching) με
+                διαδραστικά chips, tap-to-place και άμεση επαλήθευση.
               </p>
             </div>
           </div>
@@ -450,10 +490,12 @@
               </div>
               <div class="d-flex align-items-center gap-2 mb-2">
                 <h3 class="h5 text-navy-custom mb-0">Αυτόματο System Theme</h3>
-                <span class="badge text-white rounded-pill px-2 py-0" style="font-size: 0.65rem; background-color: #8b5cf6;">v1.0.2</span>
+                <span class="badge text-white rounded-pill px-2 py-0"
+                  style="font-size: 0.65rem; background-color: #8b5cf6;">v1.0.2</span>
               </div>
               <p class="text-muted small mb-0">
-                Προσαρμόζεται έξυπνα στο θέμα ημέρας/νύχτας του Android, στα χρονοδιαγράμματα και στην εξοικονόμηση μπαταρίας, με επιλογές System, Light και Dark mode.
+                Προσαρμόζεται έξυπνα στο θέμα ημέρας/νύχτας του Android, στα χρονοδιαγράμματα και στην εξοικονόμηση
+                μπαταρίας, με επιλογές System, Light και Dark mode.
               </p>
             </div>
           </div>
@@ -493,7 +535,8 @@
           </div>
           <h2 class="section-title mb-3">Τι Νέο Υπάρχει στην Έκδοση 1.0.2</h2>
           <p class="text-muted mt-2" style="font-size: 1.05rem; line-height: 1.65;">
-            Η νέα έκδοση 1.0.2 εισάγει πλήρη διαδραστικότητα στους πίνακες ταξινόμησης και αντιστοίχισης, αυτόματη υποστήριξη System Theme, συνεχή αναπαραγωγή ήχου και βελτιστοποιήσεις ταχύτητας και διαχείρισης μνήμης.
+            Η νέα έκδοση 1.0.2 εισάγει πλήρη διαδραστικότητα στους πίνακες ταξινόμησης και αντιστοίχισης, αυτόματη
+            υποστήριξη System Theme, συνεχή αναπαραγωγή ήχου και βελτιστοποιήσεις ταχύτητας και διαχείρισης μνήμης.
           </p>
         </div>
 
@@ -510,20 +553,25 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Πίνακες Ταξινόμησης (Sorting)</h3>
               <p class="text-muted small mb-0">
-                Πλήρης υποστήριξη και διαδραστικό UI για ερωτήσεις ταξινόμησης (π.χ. Ερώτηση 99 Γεωγραφίας: Ποταμοί vs Λίμνες). Πλέγμα διαθέσιμων chips, μηχανισμός tap-to-place και ανά-στοιχείο επικύρωση με σήματα (✅ / ❌).
+                Πλήρης υποστήριξη και διαδραστικό UI για ερωτήσεις ταξινόμησης (π.χ. Ερώτηση 99 Γεωγραφίας: Ποταμοί vs
+                Λίμνες). Πλέγμα διαθέσιμων chips, μηχανισμός tap-to-place και ανά-στοιχείο επικύρωση με σήματα (✅ / ❌).
               </p>
               <!-- Mini Mock Preview -->
               <div class="mock-sorting-preview mt-auto">
                 <div class="mock-sort-columns">
                   <div class="mock-sort-col">
                     <div class="mock-sort-header">Στήλη Ι: Ποταμοί</div>
-                    <div class="mock-chip-tag correct"><span>Αξιός</span> <i class="bi bi-check-circle-fill text-success ms-auto"></i></div>
-                    <div class="mock-chip-tag correct"><span>Αλιάκμονας</span> <i class="bi bi-check-circle-fill text-success ms-auto"></i></div>
+                    <div class="mock-chip-tag correct"><span>Αξιός</span> <i
+                        class="bi bi-check-circle-fill text-success ms-auto"></i></div>
+                    <div class="mock-chip-tag correct"><span>Αλιάκμονας</span> <i
+                        class="bi bi-check-circle-fill text-success ms-auto"></i></div>
                   </div>
                   <div class="mock-sort-col">
                     <div class="mock-sort-header">Στήλη ΙΙ: Λίμνες</div>
-                    <div class="mock-chip-tag correct"><span>Βόλβη</span> <i class="bi bi-check-circle-fill text-success ms-auto"></i></div>
-                    <div class="mock-chip-tag correct"><span>Τριχωνίδα</span> <i class="bi bi-check-circle-fill text-success ms-auto"></i></div>
+                    <div class="mock-chip-tag correct"><span>Βόλβη</span> <i
+                        class="bi bi-check-circle-fill text-success ms-auto"></i></div>
+                    <div class="mock-chip-tag correct"><span>Τριχωνίδα</span> <i
+                        class="bi bi-check-circle-fill text-success ms-auto"></i></div>
                   </div>
                 </div>
               </div>
@@ -541,7 +589,8 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Αντιστοιχίσεις Δύο Στηλών</h3>
               <p class="text-muted small mb-0">
-                Διαδραστική σύζευξη καρτών-υποδοχών Στήλης Ι με επιλογές Στήλης ΙΙ σε Γεωγραφία, Ιστορία, Θεσμούς και Πολιτισμό. Κάρτες-στόχοι, ετικέτες σύζευξης και σαφής ένδειξη προόδου.
+                Διαδραστική σύζευξη καρτών-υποδοχών Στήλης Ι με επιλογές Στήλης ΙΙ σε Γεωγραφία, Ιστορία, Θεσμούς και
+                Πολιτισμό. Κάρτες-στόχοι, ετικέτες σύζευξης και σαφής ένδειξη προόδου.
               </p>
               <!-- Mini Mock Matching Preview -->
               <div class="mock-matching-preview mt-auto">
@@ -568,11 +617,13 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Ερωτήσεις Χαρτών &amp; Checkboxes</h3>
               <p class="text-muted small mb-0">
-                Δομημένοι πίνακες τοποθεσιών με αριθμητικά σήματα και ροή αποκάλυψης αυτοαξιολόγησης (self-evaluation reveal), καθώς και ερωτήσεις πολλαπλής επιλογής (multi-select) με πλήρη μετάφραση.
+                Δομημένοι πίνακες τοποθεσιών με αριθμητικά σήματα και ροή αποκάλυψης αυτοαξιολόγησης (self-evaluation
+                reveal), καθώς και ερωτήσεις πολλαπλής επιλογής (multi-select) με πλήρη μετάφραση.
               </p>
               <div class="p-2 rounded-3 bg-subtle-custom border mt-auto text-center">
                 <small class="text-muted fw-semibold d-block">
-                  <i class="bi bi-check2-square text-primary me-1"></i> Επαλήθευση πολλαπλών σωστών απαντήσεων &amp; χάρτες
+                  <i class="bi bi-check2-square text-primary me-1"></i> Επαλήθευση πολλαπλών σωστών απαντήσεων &amp;
+                  χάρτες
                 </small>
               </div>
             </div>
@@ -589,9 +640,11 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Προεπιλογή Συστήματος (System Theme)</h3>
               <p class="text-muted small mb-0">
-                Προστέθηκε η επιλογή <strong>System Theme</strong> ως προεπιλογή out-of-the-box, με δυναμική προσαρμογή στο dark mode του Android, στα προγραμματισμένα ωράρια και στη λειτουργία εξοικονόμησης μπαταρίας.
+                Προστέθηκε η επιλογή <strong>System Theme</strong> ως προεπιλογή out-of-the-box, με δυναμική προσαρμογή
+                στο dark mode του Android, στα προγραμματισμένα ωράρια και στη λειτουργία εξοικονόμησης μπαταρίας.
               </p>
-              <div class="p-2 rounded-3 bg-subtle-custom border mt-auto d-flex justify-content-around text-center small">
+              <div
+                class="p-2 rounded-3 bg-subtle-custom border mt-auto d-flex justify-content-around text-center small">
                 <span class="text-muted"><i class="bi bi-circle-half me-1 text-info"></i> Σύστημα</span>
                 <span class="text-muted"><i class="bi bi-sun-fill me-1 text-warning"></i> Φωτεινό</span>
                 <span class="text-muted"><i class="bi bi-moon-stars-fill me-1 text-primary"></i> Σκούρο</span>
@@ -610,7 +663,8 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Συνεχής Αναπαραγωγή στα Ακουστικά</h3>
               <p class="text-muted small mb-0">
-                Η πλοήγηση στην επόμενη ή προηγούμενη ερώτηση της ίδιας ενότητας ακουστικών θεμάτων συνεχίζει αδιάλειπτα την αναπαραγωγή του ήχου, χωρίς διακοπή ή επανεκκίνηση από το 0:00.
+                Η πλοήγηση στην επόμενη ή προηγούμενη ερώτηση της ίδιας ενότητας ακουστικών θεμάτων συνεχίζει αδιάλειπτα
+                την αναπαραγωγή του ήχου, χωρίς διακοπή ή επανεκκίνηση από το 0:00.
               </p>
               <div class="p-2 rounded-3 bg-subtle-custom border mt-auto text-center small text-muted">
                 <i class="bi bi-play-circle-fill text-success me-1"></i> Αδιάλειπτη ροή 50 ηχητικών MP3
@@ -629,7 +683,9 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Memory &amp; Bitmap Caching</h3>
               <p class="text-muted small mb-0">
-                Υλοποίηση του επίσημου προτύπου της Google για διπλό πέρασμα δειγματοληψίας (downsampling) και in-memory LruCache σε φόντο (Dispatchers.IO) για τις 51 εικόνες προφορικών, με μέγεθος εφαρμογής μόλις <strong>~17 MB</strong>.
+                Υλοποίηση του επίσημου προτύπου της Google για διπλό πέρασμα δειγματοληψίας (downsampling) και in-memory
+                LruCache σε φόντο (Dispatchers.IO) για τις 51 εικόνες προφορικών, με μέγεθος εφαρμογής μόλις <strong>~17
+                  MB</strong>.
               </p>
               <div class="p-2 rounded-3 bg-subtle-custom border mt-auto text-center small text-muted">
                 <i class="bi bi-hdd-fill text-primary me-1"></i> Μέγεθος ~17 MB &bull; Μηδενικό UI Stutter
@@ -645,21 +701,20 @@
               <h3 class="h4 fw-bold text-navy-custom mb-0">
                 <i class="bi bi-clock-history me-2 text-primary-custom"></i>Ιστορικό Εκδόσεων (Release Log)
               </h3>
-              <a href="CHANGELOG.md" target="_blank" class="btn btn-outline-secondary btn-sm rounded-pill px-3">
-                <i class="bi bi-file-text me-1"></i> Πλήρες CHANGELOG.md
-              </a>
             </div>
 
             <div class="accordion changelog-accordion" id="changelogAccordion">
               <!-- Item 1: v1.0.2 -->
               <div class="accordion-item">
                 <h4 class="accordion-header" id="heading102">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse102" aria-expanded="true" aria-controls="collapse102">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse102"
+                    aria-expanded="true" aria-controls="collapse102">
                     <span class="d-flex align-items-center gap-2 flex-wrap">
                       <span class="badge bg-primary text-white rounded-pill px-2 py-1">Έκδοση 1.0.2</span>
                       <span>23 Οκτωβρίου 2026</span>
-                      <small class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Τελευταία Έκδοση</small>
+                      <small
+                        class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">Τελευταία
+                        Έκδοση</small>
                     </span>
                   </button>
                 </h4>
@@ -668,19 +723,32 @@
                   <div class="accordion-body">
                     <h5 class="h6 fw-bold text-navy-custom mb-2">✨ Νέες Δυνατότητες (Added)</h5>
                     <ul class="changelog-list mb-3">
-                      <li><strong>Διαδραστικοί Πίνακες Ταξινόμησης (`sorting`)</strong>: Πλήρης υποστήριξη και διαδραστικό UI για ερωτήσεις ταξινόμησης σε στήλες (π.χ. Ερώτηση 99 Γεωγραφίας: Ποταμοί vs Λίμνες) με chip grid, tap-to-place & tap-to-remove και επικύρωση με σήματα (✅ / ❌).</li>
-                      <li><strong>Αντιστοιχίσεις Δύο Στηλών (`matching`)</strong>: Πλήρης διαδραστική σύζευξη καρτών-υποδοχών Στήλης Ι με επιλογές Στήλης ΙΙ σε Γεωγραφία, Ιστορία, Θεσμούς και Πολιτισμό με οπτικές ετικέτες σύζευξης.</li>
-                      <li><strong>Ερωτήσεις Χαρτών & Πολλαπλής Επιλογής</strong>: Δομημένοι πίνακες τοποθεσιών με αριθμητικά σήματα, reveal flow και checkboxes πολλαπλής επιλογής.</li>
-                      <li><strong>Προεπιλογή Συστήματος (System Theme)</strong>: Προσθήκη επιλογής `AppThemeMode.SYSTEM` ως προεπιλογή out of the box, προσαρμοζόμενη στο day/night mode, dark mode schedules και battery saver του Android.</li>
-                      <li><strong>Πολυγλωσσικά Μηνύματα Διεπαφής</strong>: Μεταφράσεις όλων των νέων οδηγιών και ετικετών πινάκων σε Ελληνικά, Αγγλικά, Περσικά, Αραβικά και Τουρκικά.</li>
+                      <li><strong>Διαδραστικοί Πίνακες Ταξινόμησης (`sorting`)</strong>: Πλήρης υποστήριξη και
+                        διαδραστικό UI για ερωτήσεις ταξινόμησης σε στήλες (π.χ. Ερώτηση 99 Γεωγραφίας: Ποταμοί vs
+                        Λίμνες) με chip grid, tap-to-place & tap-to-remove και επικύρωση με σήματα (✅ / ❌).</li>
+                      <li><strong>Αντιστοιχίσεις Δύο Στηλών (`matching`)</strong>: Πλήρης διαδραστική σύζευξη
+                        καρτών-υποδοχών Στήλης Ι με επιλογές Στήλης ΙΙ σε Γεωγραφία, Ιστορία, Θεσμούς και Πολιτισμό με
+                        οπτικές ετικέτες σύζευξης.</li>
+                      <li><strong>Ερωτήσεις Χαρτών & Πολλαπλής Επιλογής</strong>: Δομημένοι πίνακες τοποθεσιών με
+                        αριθμητικά σήματα, reveal flow και checkboxes πολλαπλής επιλογής.</li>
+                      <li><strong>Προεπιλογή Συστήματος (System Theme)</strong>: Προσθήκη επιλογής `AppThemeMode.SYSTEM`
+                        ως προεπιλογή out of the box, προσαρμοζόμενη στο day/night mode, dark mode schedules και battery
+                        saver του Android.</li>
+                      <li><strong>Πολυγλωσσικά Μηνύματα Διεπαφής</strong>: Μεταφράσεις όλων των νέων οδηγιών και
+                        ετικετών πινάκων σε Ελληνικά, Αγγλικά, Περσικά, Αραβικά και Τουρκικά.</li>
                     </ul>
 
                     <h5 class="h6 fw-bold text-navy-custom mb-2">⚡ Βελτιστοποιήσεις & Διορθώσεις (Changed & Fixed)</h5>
                     <ul class="changelog-list">
-                      <li><strong>Συνεχής Αναπαραγωγή Ήχου στα Ακουστικά</strong>: Αδιάλειπτη ροή ακρόασης κατά την πλοήγηση στις ερωτήσεις της ίδιας ενότητας χωρίς διακοπή ή επανεκκίνηση από το 0:00.</li>
-                      <li><strong>Αποθήκευση Απαντήσεων</strong>: Διατήρηση των απαντήσεων ταξινόμησης και αντιστοίχισης στη μελέτη και στα αγαπημένα ακόμα και μετά από επανεκκίνηση της εφαρμογής.</li>
-                      <li><strong>Memory & Bitmap Optimization</strong>: Google Play standard downsampling με `inSampleSize`, `RGB_565` και in-memory `LruCache` (1/8 max heap) σε `Dispatchers.IO` για τις 51 εικόνες προφορικών.</li>
-                      <li><strong>Native Crash & ANR Debug Symbols</strong>: Ενσωμάτωση πλήρων συμβόλων αποσφαλμάτωσης (`FULL`) στο release App Bundle (.aab).</li>
+                      <li><strong>Συνεχής Αναπαραγωγή Ήχου στα Ακουστικά</strong>: Αδιάλειπτη ροή ακρόασης κατά την
+                        πλοήγηση στις ερωτήσεις της ίδιας ενότητας χωρίς διακοπή ή επανεκκίνηση από το 0:00.</li>
+                      <li><strong>Αποθήκευση Απαντήσεων</strong>: Διατήρηση των απαντήσεων ταξινόμησης και αντιστοίχισης
+                        στη μελέτη και στα αγαπημένα ακόμα και μετά από επανεκκίνηση της εφαρμογής.</li>
+                      <li><strong>Memory & Bitmap Optimization</strong>: Google Play standard downsampling με
+                        `inSampleSize`, `RGB_565` και in-memory `LruCache` (1/8 max heap) σε `Dispatchers.IO` για τις 51
+                        εικόνες προφορικών.</li>
+                      <li><strong>Native Crash & ANR Debug Symbols</strong>: Ενσωμάτωση πλήρων συμβόλων αποσφαλμάτωσης
+                        (`FULL`) στο release App Bundle (.aab).</li>
                       <li>Διόρθωση εμφάνισης πινάκων ταξινόμησης που παλαιότερα εμφανίζονταν κενοί.</li>
                     </ul>
                   </div>
@@ -703,9 +771,12 @@
                   data-bs-parent="#changelogAccordion">
                   <div class="accordion-body">
                     <ul class="changelog-list">
-                      <li><strong>RTL Layout Support</strong>: Πλήρης υποστήριξη διάταξης από δεξιά-προς-αριστερά για τις μεταφράσεις σε Περσικά και Αραβικά.</li>
-                      <li><strong>Dual-Pane Layout</strong>: Προσαρμοστική πολυπαραθυρική διάταξη για Foldable συσκευές και tablets με πλευρική μπάρα πλοήγησης.</li>
-                      <li><strong>Audio Streaming Fallback & Caching</strong>: Βελτιστοποίηση αποθήκευσης και ανάκτησης ηχητικών αρχείων.</li>
+                      <li><strong>RTL Layout Support</strong>: Πλήρης υποστήριξη διάταξης από δεξιά-προς-αριστερά για
+                        τις μεταφράσεις σε Περσικά και Αραβικά.</li>
+                      <li><strong>Dual-Pane Layout</strong>: Προσαρμοστική πολυπαραθυρική διάταξη για Foldable συσκευές
+                        και tablets με πλευρική μπάρα πλοήγησης.</li>
+                      <li><strong>Audio Streaming Fallback & Caching</strong>: Βελτιστοποίηση αποθήκευσης και ανάκτησης
+                        ηχητικών αρχείων.</li>
                       <li>Βελτιώσεις στην προφορά TTS και στα keep rules του ProGuard / R8.</li>
                     </ul>
                   </div>
@@ -728,10 +799,13 @@
                   data-bs-parent="#changelogAccordion">
                   <div class="accordion-body">
                     <ul class="changelog-list">
-                      <li><strong>Αρχική Κυκλοφορία</strong> της εφαρμογής Προετοιμασίας Π.Ε.Γ.Π. (Ιθαγένεια) στο Android.</li>
-                      <li>Πλήρης τράπεζα θεμάτων με 920+ ερωτήσεις σε Ιστορία, Γεωγραφία, Πολιτικούς Θεσμούς, Πολιτισμό και Γλώσσα.</li>
+                      <li><strong>Αρχική Κυκλοφορία</strong> της εφαρμογής Προετοιμασίας Π.Ε.Γ.Π. (Ιθαγένεια) στο
+                        Android.</li>
+                      <li>Πλήρης τράπεζα θεμάτων με 920+ ερωτήσεις σε Ιστορία, Γεωγραφία, Πολιτικούς Θεσμούς, Πολιτισμό
+                        και Γλώσσα.</li>
                       <li>Προσομοιωτής επίσημων εξετάσεων 20 ερωτήσεων με χρονόμετρο και αναλυτικό score card.</li>
-                      <li>26 σενάρια προφορικής εξέτασης με 51 αυθεντικές έγχρωμες εικόνες και εργαστήριο 100 γραπτών θεμάτων.</li>
+                      <li>26 σενάρια προφορικής εξέτασης με 51 αυθεντικές έγχρωμες εικόνες και εργαστήριο 100 γραπτών
+                        θεμάτων.</li>
                       <li>Πολυγλωσσικός οδηγός μελέτης σε English, فارسی, العربية και Türkçe.</li>
                     </ul>
                   </div>
@@ -755,7 +829,10 @@
           </div>
           <h2 class="section-title mb-3">Εξασκηθείτε στη Δική σας Γλώσσα: 4 Διαθέσιμες Μεταφράσεις</h2>
           <p class="text-muted mt-2" style="font-size: 1.05rem; line-height: 1.65;">
-            Η κατανόηση της ελληνικής νομικής, ιστορικής και συνταγματικής ορολογίας αποτελεί συχνά το δυσκολότερο εμπόδιο για τους υποψηφίους. Η εφαρμογή προσφέρει πλέον πλήρεις, έγκυρες μεταφράσεις σε <strong>English</strong>, <strong>فارسی</strong>, <strong>العربية</strong> και <strong>Türkçe</strong>, επιτρέποντάς σας να μελετάτε με απόλυτη αυτοπεποίθηση.
+            Η κατανόηση της ελληνικής νομικής, ιστορικής και συνταγματικής ορολογίας αποτελεί συχνά το δυσκολότερο
+            εμπόδιο για τους υποψηφίους. Η εφαρμογή προσφέρει πλέον πλήρεις, έγκυρες μεταφράσεις σε
+            <strong>English</strong>, <strong>فارسی</strong>, <strong>العربية</strong> και <strong>Türkçe</strong>,
+            επιτρέποντάς σας να μελετάτε με απόλυτη αυτοπεποίθηση.
           </p>
         </div>
 
@@ -805,7 +882,8 @@
           <div class="simulator-top-bar">
             <div class="d-flex align-items-center gap-2">
               <i class="bi bi-phone fs-5 text-warning"></i>
-              <span class="fw-bold small text-uppercase" style="letter-spacing: 0.05em;">Διαδραστική Προεπισκόπηση Εφαρμογής</span>
+              <span class="fw-bold small text-uppercase" style="letter-spacing: 0.05em;">Διαδραστική Προεπισκόπηση
+                Εφαρμογής</span>
             </div>
             <!-- Language Switcher Buttons -->
             <div class="simulator-lang-pills" id="simLangPills" role="tablist" aria-label="Επιλογή γλώσσας μετάφρασης">
@@ -834,7 +912,8 @@
                 <i class="bi bi-bank"></i>
                 <span>Πολιτικοί Θεσμοί &bull; Ερώτηση 14</span>
               </span>
-              <button type="button" class="sim-mode-toggle-btn active" id="simBilingualToggle" title="Εναλλαγή διγλωσσικής προβολής">
+              <button type="button" class="sim-mode-toggle-btn active" id="simBilingualToggle"
+                title="Εναλλαγή διγλωσσικής προβολής">
                 <i class="bi bi-eye"></i>
                 <span id="simToggleText">Δίγλωσση Προβολή</span>
               </button>
@@ -858,7 +937,8 @@
               <i class="bi bi-check-circle-fill fs-5 text-success flex-shrink-0 mt-1"></i>
               <div>
                 <strong class="d-block mb-1" id="simExplanationTitle">Επίσημη Επεξήγηση</strong>
-                <span id="simExplanationText">Σωστή απάντηση το Β. Σύμφωνα με το Άρθρο 1 παρ. 1 του Συντάγματος, το πολίτευμα της Ελλάδας είναι Προεδρευόμενη Κοινοβουλευτική Δημοκρατία.</span>
+                <span id="simExplanationText">Σωστή απάντηση το Β. Σύμφωνα με το Άρθρο 1 παρ. 1 του Συντάγματος, το
+                  πολίτευμα της Ελλάδας είναι Προεδρευόμενη Κοινοβουλευτική Δημοκρατία.</span>
               </div>
             </div>
           </div>
@@ -873,7 +953,8 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Κατανόηση Δύσκολης Ορολογίας</h3>
               <p class="text-muted small mb-0">
-                Νομικές, πολιτικές και ιστορικές έννοιες που συχνά προβληματίζουν τους μη-ελληνόφωνους υποψηφίους αποδίδονται με σαφήνεια και ακρίβεια στη γλώσσα σας.
+                Νομικές, πολιτικές και ιστορικές έννοιες που συχνά προβληματίζουν τους μη-ελληνόφωνους υποψηφίους
+                αποδίδονται με σαφήνεια και ακρίβεια στη γλώσσα σας.
               </p>
             </div>
           </div>
@@ -885,7 +966,8 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Διγλωσσική Μελέτη (Side-by-Side)</h3>
               <p class="text-muted small mb-0">
-                Διαβάστε ταυτόχρονα το ελληνικό πρωτότυπο κείμενο και τη μετάφραση. Έτσι μαθαίνετε τις ελληνικές διατυπώσεις που θα συναντήσετε στο επίσημο τεστ.
+                Διαβάστε ταυτόχρονα το ελληνικό πρωτότυπο κείμενο και τη μετάφραση. Έτσι μαθαίνετε τις ελληνικές
+                διατυπώσεις που θα συναντήσετε στο επίσημο τεστ.
               </p>
             </div>
           </div>
@@ -897,7 +979,8 @@
               </div>
               <h3 class="h5 fw-bold text-navy-custom mb-2">Εγγενής Υποστήριξη RTL</h3>
               <p class="text-muted small mb-0">
-                Πλήρης υποστήριξη διάταξης από δεξιά-προς-αριστερά (RTL) και καλαίσθητη γραμματοσειρά για τα <strong>Περσικά</strong> και τα <strong>Αραβικά</strong>, εξασφαλίζοντας φυσική ανάγνωση.
+                Πλήρης υποστήριξη διάταξης από δεξιά-προς-αριστερά (RTL) και καλαίσθητη γραμματοσειρά για τα
+                <strong>Περσικά</strong> και τα <strong>Αραβικά</strong>, εξασφαλίζοντας φυσική ανάγνωση.
               </p>
             </div>
           </div>
@@ -1151,7 +1234,8 @@
               <p class="text-white-50 mb-4" style="font-size: 1.05rem; line-height: 1.6;">
                 Η πλατφόρμα μας φιλοξενεί και τα 50 ηχητικά αρχεία των εξετάσεων (MP3) σε διακομιστή υψηλής ταχύτητας με
                 υποστήριξη <strong>Byte-Range seeking</strong> και <strong>CORS</strong>. Αυτό επιτρέπει στην εφαρμογή
-                Android να παραμένει ελαφριά (μόλις <strong>~17 MB</strong>) ενώ παρέχει αστραπιαία φόρτωση και συνεχή αδιάλειπτη ακρόαση οποιουδήποτε
+                Android να παραμένει ελαφριά (μόλις <strong>~17 MB</strong>) ενώ παρέχει αστραπιαία φόρτωση και συνεχή
+                αδιάλειπτη ακρόαση οποιουδήποτε
                 θέματος.
               </p>
               <div class="d-flex flex-wrap gap-3">
@@ -1235,7 +1319,9 @@
               role="alert">
               <i class="bi bi-shield-check text-success fs-4 flex-shrink-0"></i>
               <div class="small text-muted mb-0">
-                <strong>100% Επίσημη Τράπεζα Θεμάτων:</strong> Πλήρης πρόσβαση σε 920+ ερωτήσεις, μεταφράσεις σε 4 γλώσσες (English, فارسی, العربية, Türkçe), 50 ηχητικά θέματα και απεριόριστες προσομοιώσεις εξετάσεων χωρίς διαφημίσεις.
+                <strong>100% Επίσημη Τράπεζα Θεμάτων:</strong> Πλήρης πρόσβαση σε 920+ ερωτήσεις, μεταφράσεις σε 4
+                γλώσσες (English, فارسی, العربية, Türkçe), 50 ηχητικά θέματα και απεριόριστες προσομοιώσεις εξετάσεων
+                χωρίς διαφημίσεις.
               </div>
             </div>
           </div>
@@ -1314,7 +1400,9 @@
         <div class="col-md-6 text-center text-md-end">
           <p class="mb-0 small text-muted">
             Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="#syllabus" class="text-decoration-none text-muted">Ύλη
-              Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.html" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a>
+              Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Google Play</a> &bull; <a
+              href="privacy_policy.html" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική
+              Απορρήτου</a>
           </p>
         </div>
       </div>
