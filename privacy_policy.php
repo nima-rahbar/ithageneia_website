@@ -107,6 +107,11 @@ header("Expires: 0");
               <i class="bi bi-shield-check me-1"></i> Πολιτική Απορρήτου
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="terms_of_service.php">
+              <i class="bi bi-file-earmark-text me-1"></i> Όροι Χρήσης
+            </a>
+          </li>
         </ul>
 
         <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
@@ -565,7 +570,7 @@ header("Expires: 0");
         <div class="col-md-6 text-center text-md-end">
           <p class="mb-0 small text-muted">
             Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="index.php#syllabus" class="text-decoration-none text-muted">Ύλη
-              Εξετάσεων</a> &bull; <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a>
+              Εξετάσεων</a> &bull; <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a> &bull; <a href="terms_of_service.php" class="text-decoration-none text-muted">Όροι Χρήσης</a>
           </p>
         </div>
       </div>

@@ -1406,8 +1406,8 @@ header("Expires: 0");
           <p class="mb-0 small text-muted">
             Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="#syllabus" class="text-decoration-none text-muted">Ύλη
               Εξετάσεων</a> &bull; <a href="#download" class="text-decoration-none text-muted">Google Play</a> &bull; <a
-              href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική
-              Απορρήτου</a>
+              href="privacy_policy.php" class="text-decoration-none text-muted">Πολιτική
+              Απορρήτου</a> &bull; <a href="terms_of_service.php" class="text-decoration-none text-navy-custom fw-semibold">Όροι Χρήσης</a>
           </p>
         </div>
       </div>

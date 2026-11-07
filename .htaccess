@@ -22,6 +22,11 @@ DirectoryIndex index.php index.html
     # 2a. Redirect legacy .html endpoints to active .php files
     RewriteRule ^index\.html$ / [R=301,L]
     RewriteRule ^privacy_policy\.html$ /privacy_policy.php [R=301,L]
+    RewriteRule ^terms_of_service\.html$ /terms_of_service.php [R=301,L]
+    RewriteRule ^terms\.html$ /terms_of_service.php [R=301,L]
+    RewriteRule ^terms\.php$ /terms_of_service.php [R=301,L]
+    RewriteRule ^terms/?$ /terms_of_service.php [R=301,L]
+    RewriteRule ^tos/?$ /terms_of_service.php [R=301,L]
 
     # 2b. Legacy theme assets: /wp-content/themes/nima-studio/*
     RewriteRule ^wp-content/themes/nima-studio(/.*)?$ / [R=301,L]
