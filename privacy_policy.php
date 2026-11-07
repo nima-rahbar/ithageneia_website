@@ -79,7 +79,8 @@ header("Expires: 0");
       </a>
 
       <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarPrivacy" aria-controls="navbarPrivacy" aria-expanded="false" aria-label="Εναλλαγή πλοήγησης">
+        data-bs-target="#navbarPrivacy" aria-controls="navbarPrivacy" aria-expanded="false"
+        aria-label="Εναλλαγή πλοήγησης">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -130,8 +131,10 @@ header("Expires: 0");
     <div class="container">
       <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb mb-0 small">
-          <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none text-muted"><i class="bi bi-house me-1"></i>Αρχική</a></li>
-          <li class="breadcrumb-item active text-navy-custom fw-semibold" aria-current="page">Πολιτική Απορρήτου (Privacy Policy)</li>
+          <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none text-muted"><i
+                class="bi bi-house me-1"></i>Αρχική</a></li>
+          <li class="breadcrumb-item active text-navy-custom fw-semibold" aria-current="page">Πολιτική Απορρήτου
+            (Privacy Policy)</li>
         </ol>
       </nav>
 
@@ -140,7 +143,8 @@ header("Expires: 0");
           <i class="bi bi-shield-check text-primary-custom"></i>
           <span>Επίσημο Έγγραφο / Official Privacy Policy</span>
         </div>
-        <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 fw-semibold">
+        <span
+          class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 fw-semibold">
           <i class="bi bi-patch-check-fill me-1"></i> Google Play &amp; GDPR Compliant
         </span>
       </div>
@@ -149,7 +153,8 @@ header("Expires: 0");
         Πολιτική Απορρήτου <span class="text-primary-custom">&amp;</span> Προστασίας Δεδομένων
       </h1>
       <p class="hero-subtitle mb-4">
-        Privacy Policy for <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> — Greek Citizenship &amp; Naturalization Test Preparation Android Application.
+        Privacy Policy for <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> — Greek Citizenship &amp; Naturalization Test Preparation
+        Android Application.
       </p>
 
       <!-- Meta Info Chips -->
@@ -245,7 +250,8 @@ header("Expires: 0");
         <aside class="col-lg-4 col-xl-3 d-none d-lg-block">
           <div class="privacy-toc-card">
             <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom">
-              <span class="fw-bold text-navy-custom small text-uppercase" style="letter-spacing: 0.05em;">Περιεχομενα (Index)</span>
+              <span class="fw-bold text-navy-custom small text-uppercase" style="letter-spacing: 0.05em;">Περιεχομενα
+                (Index)</span>
               <i class="bi bi-list-nested text-primary-custom fs-5"></i>
             </div>
 
@@ -288,7 +294,8 @@ header("Expires: 0");
               </a>
             </nav>
 
-            <button type="button" class="btn btn-outline-secondary w-100 rounded-pill btn-sm d-flex align-items-center justify-content-center gap-2 mb-3 btn-print"
+            <button type="button"
+              class="btn btn-outline-secondary w-100 rounded-pill btn-sm d-flex align-items-center justify-content-center gap-2 mb-3 btn-print"
               onclick="window.print()">
               <i class="bi bi-printer"></i>
               <span>Εκτύπωση / Print PDF</span>
@@ -304,7 +311,8 @@ header("Expires: 0");
                 </div>
               </div>
               <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank"
-                rel="noopener noreferrer" class="btn btn-navy-custom btn-sm w-100 py-1 text-center text-decoration-none">
+                rel="noopener noreferrer"
+                class="btn btn-navy-custom btn-sm w-100 py-1 text-center text-decoration-none">
                 <i class="bi bi-google-play me-1"></i> Άνοιγμα στο Play Store
               </a>
             </div>
@@ -323,9 +331,12 @@ header("Expires: 0");
               </h2>
               <p>
                 This Privacy Policy explains how <strong>Ιθαγένεια Π.Ε.Γ.Π.</strong> ("the Application", "we", "our",
-                or "us") handles user data. We are deeply committed to protecting your privacy and respecting candidate confidentiality.
-                The Application is developed as an educational, interactive study utility for candidates preparing for the official
-                <strong>Certificate of Knowledge Adequacy for Naturalization (Π.Ε.Γ.Π.)</strong> examination in the Hellenic Republic.
+                or "us") handles user data. We are deeply committed to protecting your privacy and respecting candidate
+                confidentiality.
+                The Application is developed as an educational, interactive study utility for candidates preparing for
+                the official
+                <strong>Certificate of Knowledge Adequacy for Naturalization (Π.Ε.Γ.Π.)</strong> examination in the
+                Hellenic Republic.
               </p>
 
               <div class="privacy-callout-guarantee">
@@ -334,8 +345,10 @@ header("Expires: 0");
                   <div>
                     <strong class="text-navy-custom d-block mb-1 fs-6">Core Privacy Guarantee:</strong>
                     <span class="text-muted small lh-base">
-                      We do <strong>NOT</strong> collect, record, transmit, sell, rent, or share any of your personally identifiable information (PII).
-                      The Application operates offline for question drills, explanations, and exam simulations. All study history, bookmark lists, and test statistics remain strictly on your individual device.
+                      We do <strong>NOT</strong> collect, record, transmit, sell, rent, or share any of your personally
+                      identifiable information (PII).
+                      The Application operates offline for question drills, explanations, and exam simulations. All
+                      study history, bookmark lists, and test statistics remain strictly on your individual device.
                     </span>
                   </div>
                 </div>
@@ -349,21 +362,29 @@ header("Expires: 0");
                 <span>2. Information Collection and Use</span>
               </h2>
               <p>
-                We do not require users to create an account, log in, register, or provide any personal credentials to access and use the full features of the Application.
+                We do not require users to create an account, log in, register, or provide any personal credentials to
+                access and use the full features of the Application.
               </p>
 
               <ul class="privacy-item-list">
                 <li>
-                  <strong>No Personally Identifiable Information (PII):</strong> We do not ask for, collect, store, or transmit your name, physical address, email address, phone number, national tax/social security numbers, or identification documents.
+                  <strong>No Personally Identifiable Information (PII):</strong> We do not ask for, collect, store, or
+                  transmit your name, physical address, email address, phone number, national tax/social security
+                  numbers, or identification documents.
                 </li>
                 <li>
-                  <strong>No Geolocation Tracking:</strong> The Application never tracks, queries, records, or accesses your precise (GPS) or approximate network-based geographical location.
+                  <strong>No Geolocation Tracking:</strong> The Application never tracks, queries, records, or accesses
+                  your precise (GPS) or approximate network-based geographical location.
                 </li>
                 <li>
-                  <strong>No Analytics, Telemetry, or Profiling SDKs:</strong> The Application contains no third-party user behavioral tracking SDKs (e.g., Firebase Analytics, Adjust, AppsFlyer) or advertising identifier collectors (Google Advertising ID / GAID).
+                  <strong>No Analytics, Telemetry, or Profiling SDKs:</strong> The Application contains no third-party
+                  user behavioral tracking SDKs (e.g., Firebase Analytics, Adjust, AppsFlyer) or advertising identifier
+                  collectors (Google Advertising ID / GAID).
                 </li>
                 <li>
-                  <strong>No Financial or Payment Data Handled by Us:</strong> All transactions for acquiring the application are handled exclusively and securely by Google Play Billing via your Google account. We have no access to your payment card details or financial information.
+                  <strong>No Financial or Payment Data Handled by Us:</strong> All transactions for acquiring the
+                  application are handled exclusively and securely by Google Play Billing via your Google account. We
+                  have no access to your payment card details or financial information.
                 </li>
               </ul>
             </section>
@@ -375,18 +396,22 @@ header("Expires: 0");
                 <span>3. Local Device Storage</span>
               </h2>
               <p>
-                To provide persistent study functionality across application sessions, the Application stores user preferences and study records locally within your device's native sandboxed internal storage (using Android's <code>SharedPreferences</code> and internal app storage).
+                To provide persistent study functionality across application sessions, the Application stores user
+                preferences and study records locally within your device's native sandboxed internal storage (using
+                Android's <code>SharedPreferences</code> and internal app storage).
               </p>
               <p class="mb-2"><strong>Data stored locally on your device includes:</strong></p>
               <ul class="privacy-item-list">
                 <li>
-                  <strong>Study Progress &amp; Simulation Scores:</strong> Records of answered questions, mock exam attempts, and completion ratios to help you track your readiness.
+                  <strong>Study Progress &amp; Simulation Scores:</strong> Records of answered questions, mock exam
+                  attempts, and completion ratios to help you track your readiness.
                 </li>
                 <li>
                   <strong>Bookmarks &amp; Saved Questions:</strong> Questions you flag for targeted revision or review.
                 </li>
                 <li>
-                  <strong>App Display &amp; Language Preferences:</strong> Your selected translation language (English, Persian, Arabic, or Turkish), bilingual toggle state, and theme setting (Light / Dark mode).
+                  <strong>App Display &amp; Language Preferences:</strong> Your selected translation language (English,
+                  Persian, Arabic, or Turkish), bilingual toggle state, and theme setting (Light / Dark mode).
                 </li>
               </ul>
 
@@ -396,7 +421,9 @@ header("Expires: 0");
                   <span class="fw-bold small text-navy-custom">How to delete your stored data:</span>
                 </div>
                 <p class="small text-muted mb-0">
-                  Because this data resides strictly on your hardware, you can instantly erase all study records and preferences at any time by going to your device's <em>Android Settings &rarr; Apps &rarr; Ιθαγένεια &rarr; Storage &rarr; Clear Data</em>, or by uninstalling the application.
+                  Because this data resides strictly on your hardware, you can instantly erase all study records and
+                  preferences at any time by going to your device's <em>Android Settings &rarr; Apps &rarr; Ιθαγένεια
+                    &rarr; Storage &rarr; Clear Data</em>, or by uninstalling the application.
                 </p>
               </div>
             </section>
@@ -408,7 +435,8 @@ header("Expires: 0");
                 <span>4. Device Permissions</span>
               </h2>
               <p>
-                The Application adheres strictly to the principle of minimal privilege. It requests only two non-dangerous standard network permissions essential for streaming listening comprehension audio:
+                The Application adheres strictly to the principle of minimal privilege. It requests only two
+                non-dangerous standard network permissions essential for streaming listening comprehension audio:
               </p>
 
               <div class="table-responsive my-3">
@@ -423,16 +451,23 @@ header("Expires: 0");
                   <tbody>
                     <tr>
                       <td><code>android.permission.INTERNET</code></td>
-                      <td><span class="badge bg-primary-subtle text-primary-custom border border-primary-subtle rounded-pill px-2">Normal</span></td>
+                      <td><span
+                          class="badge bg-primary-subtle text-primary-custom border border-primary-subtle rounded-pill px-2">Normal</span>
+                      </td>
                       <td>
-                        Used solely to stream official audio files for the 50 listening comprehension topics (Ακουστικά) from our secure web server (<code>ithageneia.nimarahbar.com</code>). No user data or telemetry is transmitted.
+                        Used solely to stream official audio files for the 50 listening comprehension topics (Ακουστικά)
+                        from our secure web server (<code>ithageneia.nimarahbar.com</code>). No user data or telemetry
+                        is transmitted.
                       </td>
                     </tr>
                     <tr>
                       <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
-                      <td><span class="badge bg-primary-subtle text-primary-custom border border-primary-subtle rounded-pill px-2">Normal</span></td>
+                      <td><span
+                          class="badge bg-primary-subtle text-primary-custom border border-primary-subtle rounded-pill px-2">Normal</span>
+                      </td>
                       <td>
-                        Used to verify whether an active network connection (Wi-Fi or cellular) is available before attempting to stream audio, preventing playback errors when offline.
+                        Used to verify whether an active network connection (Wi-Fi or cellular) is available before
+                        attempting to stream audio, preventing playback errors when offline.
                       </td>
                     </tr>
                   </tbody>
@@ -440,9 +475,12 @@ header("Expires: 0");
               </div>
 
               <div class="p-3 bg-light rounded-3 border">
-                <strong class="text-navy-custom d-block small mb-1"><i class="bi bi-shield-x me-1 text-danger"></i> Permissions Never Requested:</strong>
+                <strong class="text-navy-custom d-block small mb-1"><i class="bi bi-shield-x me-1 text-danger"></i>
+                  Permissions Never Requested:</strong>
                 <p class="small text-muted mb-0">
-                  The Application does <strong>NOT</strong> request, access, or utilize permissions for Camera, Microphone, Read/Write External Storage, Contacts, Location, Phone State, SMS, Bluetooth, or Biometrics.
+                  The Application does <strong>NOT</strong> request, access, or utilize permissions for Camera,
+                  Microphone, Read/Write External Storage, Contacts, Location, Phone State, SMS, Bluetooth, or
+                  Biometrics.
                 </p>
               </div>
             </section>
@@ -454,17 +492,24 @@ header("Expires: 0");
                 <span>5. Third-Party Services &amp; Network Requests</span>
               </h2>
               <p>
-                When you stream an audio listening exercise, your device establishes a standard HTTPS connection with our audio streaming host at <code>ithageneia.nimarahbar.com</code>.
+                When you stream an audio listening exercise, your device establishes a standard HTTPS connection with
+                our audio streaming host at <code>ithageneia.nimarahbar.com</code>.
               </p>
               <ul class="privacy-item-list">
                 <li>
-                  <strong>Audio Server Requests:</strong> Like all standard web connections, our web server logs standard server connection metadata (such as IP address and user-agent) strictly for operational network routing, security rate-limiting, and server uptime monitoring. These server logs are not linked to any user identity.
+                  <strong>Audio Server Requests:</strong> Like all standard web connections, our web server logs
+                  standard server connection metadata (such as IP address and user-agent) strictly for operational
+                  network routing, security rate-limiting, and server uptime monitoring. These server logs are not
+                  linked to any user identity.
                 </li>
                 <li>
-                  <strong>No Ad Networks:</strong> We do not integrate advertising networks (such as Google AdMob, Unity Ads, or Meta Audience Network).
+                  <strong>No Ad Networks:</strong> We do not integrate advertising networks (such as Google AdMob, Unity
+                  Ads, or Meta Audience Network).
                 </li>
                 <li>
-                  <strong>External Links:</strong> The Application and this website may contain informational links to official Greek Ministry resources (e.g. <code>ypes.gr</code>) or Google Play. If you navigate to an external website, please review that site's independent privacy policy.
+                  <strong>External Links:</strong> The Application and this website may contain informational links to
+                  official Greek Ministry resources (e.g. <code>ypes.gr</code>) or Google Play. If you navigate to an
+                  external website, please review that site's independent privacy policy.
                 </li>
               </ul>
             </section>
@@ -476,10 +521,16 @@ header("Expires: 0");
                 <span>6. Children's Privacy</span>
               </h2>
               <p>
-                The Application is an adult educational study tool intended for adult candidates participating in Greek naturalization procedures. It does not address or target individuals under the age of 13 (or under 16 in applicable EU jurisdictions).
+                The Application is an adult educational study tool intended for adult candidates participating in Greek
+                naturalization procedures. It does not address or target individuals under the age of 13 (or under 16 in
+                applicable EU jurisdictions).
               </p>
               <p>
-                We do not knowingly collect personal identifiable information from children. Because no personal data is collected from any user, no child data is ever requested, harvested, or maintained. If a parent or guardian believes personal data has inadvertently been shared, please contact us at <a href="mailto:support@nimarahbar.com" class="text-primary-custom fw-semibold">support@nimarahbar.com</a> to ensure prompt verification.
+                We do not knowingly collect personal identifiable information from children. Because no personal data is
+                collected from any user, no child data is ever requested, harvested, or maintained. If a parent or
+                guardian believes personal data has inadvertently been shared, please contact us at <a
+                  href="mailto:support@nimarahbar.com"
+                  class="text-primary-custom fw-semibold">support@nimarahbar.com</a> to ensure prompt verification.
               </p>
             </section>
 
@@ -490,10 +541,14 @@ header("Expires: 0");
                 <span>7. Data Security</span>
               </h2>
               <p>
-                Because all quiz scores, progress metrics, and preferences are stored exclusively on your local device, the protection of that data is governed by the robust application sandboxing mechanisms native to the Android operating system.
+                Because all quiz scores, progress metrics, and preferences are stored exclusively on your local device,
+                the protection of that data is governed by the robust application sandboxing mechanisms native to the
+                Android operating system.
               </p>
               <p>
-                Each Android app runs in an isolated Linux process with a distinct user ID, preventing other installed applications from reading your study files. We recommend maintaining the latest version of the Android OS and securing your device with a secure lock screen passcode or biometric authentication.
+                Each Android app runs in an isolated Linux process with a distinct user ID, preventing other installed
+                applications from reading your study files. We recommend maintaining the latest version of the Android
+                OS and securing your device with a secure lock screen passcode or biometric authentication.
               </p>
             </section>
 
@@ -504,10 +559,14 @@ header("Expires: 0");
                 <span>8. Changes to This Privacy Policy</span>
               </h2>
               <p>
-                We may periodically update this Privacy Policy to reflect future application features, improvements, or regulatory requirements from Google Play and international data protection authorities.
+                We may periodically update this Privacy Policy to reflect future application features, improvements, or
+                regulatory requirements from Google Play and international data protection authorities.
               </p>
               <p>
-                Any revisions will be published directly on this permanent URL (<a href="https://ithageneia.nimarahbar.com/privacy_policy.php" class="text-primary-custom fw-semibold">https://ithageneia.nimarahbar.com/privacy_policy.php</a>) with an updated "Last Updated" timestamp. We encourage you to review this page periodically.
+                Any revisions will be published directly on this permanent URL (<a
+                  href="https://ithageneia.nimarahbar.com/privacy_policy.php"
+                  class="text-primary-custom fw-semibold">https://ithageneia.nimarahbar.com/privacy_policy.php</a>) with
+                an updated "Last Updated" timestamp. We encourage you to review this page periodically.
               </p>
             </section>
 
@@ -518,7 +577,8 @@ header("Expires: 0");
                 <span>9. Contact &amp; Developer Information</span>
               </h2>
               <p>
-                If you have questions, feedback, or legal inquiries regarding this Privacy Policy or the data practices of the Application, please reach out directly:
+                If you have questions, feedback, or legal inquiries regarding this Privacy Policy or the data practices
+                of the Application, please reach out directly:
               </p>
 
               <div class="row g-3 mt-1">
@@ -527,7 +587,8 @@ header("Expires: 0");
                     <span class="text-muted small d-block">Developer &amp; Publisher</span>
                     <strong class="text-navy-custom fs-6">Nima Rahbar</strong>
                     <div class="mt-2">
-                      <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer" class="small text-primary-custom text-decoration-none d-flex align-items-center gap-1">
+                      <a href="https://nimarahbar.com" target="_blank" rel="noopener noreferrer"
+                        class="small text-primary-custom text-decoration-none d-flex align-items-center gap-1">
                         <i class="bi bi-globe2"></i> nimarahbar.com
                       </a>
                     </div>
@@ -538,10 +599,12 @@ header("Expires: 0");
                   <div class="p-3 bg-subtle-custom rounded-3 border h-100">
                     <span class="text-muted small d-block">Support &amp; Privacy Email</span>
                     <strong class="text-navy-custom fs-6">
-                      <a href="mailto:support@nimarahbar.com" class="text-navy-custom text-decoration-none">support@nimarahbar.com</a>
+                      <a href="mailto:support@nimarahbar.com"
+                        class="text-navy-custom text-decoration-none">support@nimarahbar.com</a>
                     </strong>
                     <div class="mt-2">
-                      <a href="mailto:support@nimarahbar.com" class="small text-primary-custom text-decoration-none d-flex align-items-center gap-1">
+                      <a href="mailto:support@nimarahbar.com"
+                        class="small text-primary-custom text-decoration-none d-flex align-items-center gap-1">
                         <i class="bi bi-envelope"></i> Αποστολή Email
                       </a>
                     </div>
@@ -569,8 +632,10 @@ header("Expires: 0");
         </div>
         <div class="col-md-6 text-center text-md-end">
           <p class="mb-0 small text-muted">
-            Εφαρμογή Προετοιμασίας Π.Ε.Γ.Π. &bull; <a href="index.php#syllabus" class="text-decoration-none text-muted">Ύλη
-              Εξετάσεων</a> &bull; <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a> &bull; <a href="terms_of_service.php" class="text-decoration-none text-muted">Όροι Χρήσης</a>
+            <a href="https://play.google.com/store/apps/details?id=com.nima.ithageneia" target="_blank"
+              rel="noopener noreferrer" class="text-decoration-none text-muted">Google Play</a> &bull; <a
+              href="privacy_policy.php" class="text-decoration-none text-navy-custom fw-semibold">Πολιτική Απορρήτου</a>
+            &bull; <a href="terms_of_service.php" class="text-decoration-none text-muted">Όροι Χρήσης</a>
           </p>
         </div>
       </div>
